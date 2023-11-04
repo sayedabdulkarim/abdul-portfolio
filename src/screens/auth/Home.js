@@ -103,8 +103,9 @@ const Home = () => {
 
               <p className="home__description" style={{ marginTop: "15px" }}>
                 I'm a Full-Stack Developer who loves building for the web &
-                mobile. I spent most of my time designing for upcoming projects
-                and making design resources and tools. Have a good read! 👋🏻
+                mobile application. I spent most of my time designing for
+                upcoming projects and making design resources and tools. Have a
+                good read! 👋🏻
                 {/* <div class="wrap">
                   blink
                   <div class="eye blink"></div>
