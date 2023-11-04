@@ -74,7 +74,7 @@ const Home = () => {
 
                   <image
                     className="home__blob-img"
-                    xlinkHref="/assets/Abdul.jpeg"
+                    xlinkHref="https://res.cloudinary.com/cnq-first/image/upload/v1699104437/Abdul_dekwwr.jpg"
                     x="-25"
                     y="0"
                     width="200"
