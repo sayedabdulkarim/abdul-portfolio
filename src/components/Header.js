@@ -30,7 +30,7 @@ const Header = () => {
 
           <div className="nav__menu" id="nav-menu">
             <ul className="nav__list grid">
-              <li className="nav__item">
+              {/* <li className="nav__item">
                 <Link to="/" className="nav__link noSelect active-link">
                   <i className="uil uil-estate nav__icon"></i> Home
                 </Link>
@@ -52,7 +52,7 @@ const Header = () => {
                 <Link to="/contact" className="nav__link noSelect">
                   <i className="uil uil-message nav__icon"></i> Contact
                 </Link>
-              </li>
+              </li> */}
             </ul>
             <i className="uil uil-times nav__close noSelect" id="nav-close"></i>
           </div>

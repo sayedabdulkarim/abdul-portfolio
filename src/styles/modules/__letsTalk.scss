@@ -1,0 +1,37 @@
+.lets_talk_containier {
+    .card {
+        padding: 20px;
+        // border: 1px solid #ddd;
+        --tw-border-opacity: 1;
+        border-color: rgb(249 168 212/var(--tw-border-opacity));
+        border-radius: 8px;
+        text-align: center;
+    }
+    
+    .card-text {
+        margin-bottom: 10px;
+        font-size: 1.2em;
+        // color: var(--title-color);
+        color: white;
+    }
+    
+    .card-text-multicolor {
+        font-size: 1.5em;
+    }
+    
+    .card-text-multicolor span:nth-child(1) {
+        color: blue;
+    }
+    
+    .card-text-multicolor {
+        background: #FF0000;
+        background: linear-gradient(to right, #FF0000 0%, #FFFF00 25%, #05C1FF 50%, #FFFF00 75%, #FF0000 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .mt-2 {
+        margin-top: 20px;
+    }
+
+}

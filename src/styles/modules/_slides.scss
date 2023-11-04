@@ -1,0 +1,19 @@
+.swiper {
+    .swiper-slide  {
+        display: flex!important;
+        align-items: center;
+        background-color: var(--body-color);
+    
+        img {
+            height: auto;
+            min-width: 350px;
+        }
+    
+        
+    }
+    /* Active state of the bullet */
+    .swiper-pagination-bullet-active {
+        background-color: var(--first-color)!important; /* Change #yourActiveColor to your desired color */
+    }
+
+}

@@ -1,0 +1,14 @@
+.header {
+    top: 15px;
+    background: transparent;
+
+    .nav {
+        border: 1px solid white;
+    border-radius: 0.75rem;
+    padding: 0 20px;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    background: hsla(0,0%,100%,.212);
+    width: 30%;
+    }
+}

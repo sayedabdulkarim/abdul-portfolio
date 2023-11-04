@@ -593,7 +593,7 @@ header {
 }
 
 .qualification [data-content] {
-  display: none;
+  // display: none;
 }
 
 .qualification__active[data-content] {
@@ -1123,7 +1123,12 @@ header {
     border-radius: 1rem;
     padding: 3rem 2.5rem 0;
     grid-template-columns: 1fr max-content;
-    column-gap: 3rem;
+    // column-gap: 3rem;
+
+    background-image: url(https://res.cloudinary.com/cnq-first/image/upload/v1699080327/image_4_mo4di1.png);
+    background-size: cover;
+    background-position: center;
+    background-size: 105% 102%;
   }
   .project__data {
     padding-top: 0.8rem;
