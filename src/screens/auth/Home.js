@@ -3,6 +3,9 @@ import SkillComponent from "../../components/SkillComponent";
 import QualificationComponent from "../../components/QualificationComponent";
 import PortfolioComponent from "../../components/Portfolio";
 import LetsTalk from "../../components/LetsTalk";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons"; // Import LinkedIn icon from brands package
+import { faArrowRightLong } from "@fortawesome/free-solid-svg-icons";
 
 const Home = () => {
   //misc
@@ -21,20 +24,20 @@ const Home = () => {
           <div className="home__content grid">
             <div className="home__social">
               <a
-                href="https://www.linkedin.com/in/rawatanimesh/"
+                href="https://www.linkedin.com/in/sayed4747/"
                 target="_blank"
                 className="home__social-icon"
                 rel="noreferrer"
               >
-                <i className="uil uil-linkedin-alt"></i>
+                <FontAwesomeIcon icon={faLinkedin} />
               </a>
               <a
-                href="https://github.com/rawatanimesh"
+                href="https://github.com/sayedabdulkarim"
                 target="_blank"
                 className="home__social-icon"
                 rel="noreferrer"
               >
-                <i className="uil uil-github-alt"></i>
+                <FontAwesomeIcon icon={faGithub} />
               </a>
               <a
                 href="https://t.me/rawatanimesh"
@@ -67,7 +70,16 @@ const Home = () => {
                                 129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
                                 -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
                   />
-                  <image className="home__blob-img" x="-20"></image>
+                  {/* <image className="home__blob-img" x="-20"></image> */}
+
+                  <image
+                    className="home__blob-img"
+                    xlinkHref="/assets/Abdul.jpeg"
+                    x="-25"
+                    y="0"
+                    width="200"
+                    height="220"
+                  ></image>
                 </g>
               </svg>
             </div>
@@ -75,13 +87,13 @@ const Home = () => {
             <div className="home__data">
               {/* <h1 className="home__title">Hi, I am Animesh</h1> */}
               <h1 className="home__title" style={{ fontSize: "32px" }}>
-                Hi👋🏻, I'm{" "}
+                Hi <span className="wave-hand"> 👋🏻 </span>, I'm{" "}
                 <span className="dark:text-[#FAFAFA] text-[#18181B]">
                   Abdul !
                 </span>
               </h1>
               <a
-                href="https://www.linkedin.com/in/azar-ahemad-54b55a204/"
+                href="https://www.linkedin.com/in/sayed4747/"
                 className="text-gray-600 dark:text-gray-400 text-xl font-bold"
                 style={{ color: "orange" }}
               >
@@ -93,6 +105,12 @@ const Home = () => {
                 I'm a Full-Stack Developer who loves building for the web &
                 mobile. I spent most of my time designing for upcoming projects
                 and making design resources and tools. Have a good read! 👋🏻
+                <p className="resume_download">
+                  Resume
+                  <a href="/assets/abdul@resume.pdf" download className="">
+                    <FontAwesomeIcon icon={faArrowRightLong} />
+                  </a>
+                </p>
               </p>
               <button
                 className="button button--flex"
@@ -101,6 +119,13 @@ const Home = () => {
               >
                 Contact Me<i className="uil uil-message button__icon"></i>
               </button>
+
+              {/* <p className="resume_download">
+                Resume
+                <a href="path/to/your/resume.pdf" download className="">
+                  <FontAwesomeIcon icon={faArrowRightLong} />
+                </a>
+              </p> */}
             </div>
           </div>
           {/* <div className="home__scroll">

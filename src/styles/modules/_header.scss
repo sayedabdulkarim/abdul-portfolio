@@ -12,3 +12,31 @@
     width: 30%;
     }
 }
+
+.home__container {
+    @keyframes wave {
+        0%, 100% { transform: rotate(0deg); }
+        10%, 30%, 50%, 70%, 90% { transform: rotate(0deg); }
+        20% { transform: rotate(-5deg); }
+        40%, 60%, 80% { transform: rotate(15deg); }
+      }
+      
+      .wave-hand {
+        display: inline-block;
+        animation-name: wave;
+        animation-duration: 2.5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        transform-origin: 70% 70%;
+      }
+            
+      .resume_download {
+    color:  var(--title-color);
+    margin-top: 15px;
+        a {
+          color: var(--title-color);
+          margin-left: 15px;
+        }
+   }
+      
+}

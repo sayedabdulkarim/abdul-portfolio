@@ -19,6 +19,9 @@ export default function App() {
   return (
     <>
       <section class="portfolio section" id="portfolio">
+        <h2 class="section__title">Portfolio</h2>
+        <span class="section__subtitle">Most recent work</span>
+
         <Swiper
           hashNavigation={{
             watchState: false,
@@ -33,6 +36,9 @@ export default function App() {
             disableOnInteraction: false, // To continue autoplay after user interaction
           }}
           className="mySwiper portfolio__container"
+          style={{
+            height: "310px",
+          }}
         >
           <div class="portfolio__container container swiper-container">
             <div class="swiper-wrapper">
@@ -51,7 +57,7 @@ export default function App() {
                     Chat app created using react, firebase and chat-engine.
                   </p>
                   <a
-                    href="https://github.com/rawatanimesh/react-chat-app"
+                    href="https://github.com/sayedabdulkarim"
                     target="_blank"
                     className="button button--flex button--small portfolio__button"
                     rel="noreferrer"
@@ -76,7 +82,7 @@ export default function App() {
                     Chat app created using react, firebase and chat-engine.
                   </p>
                   <a
-                    href="https://github.com/rawatanimesh/react-chat-app"
+                    href="https://github.com/sayedabdulkarim"
                     target="_blank"
                     className="button button--flex button--small portfolio__button"
                     rel="noreferrer"
@@ -101,7 +107,7 @@ export default function App() {
                     Chat app created using react, firebase and chat-engine.
                   </p>
                   <a
-                    href="https://github.com/rawatanimesh/react-chat-app"
+                    href="https://github.com/sayedabdulkarim"
                     target="_blank"
                     className="button button--flex button--small portfolio__button"
                     rel="noreferrer"

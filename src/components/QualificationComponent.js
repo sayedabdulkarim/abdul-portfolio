@@ -35,7 +35,6 @@ const QualificationComponent = () => {
         <div className="qualification__sections">
           {isWork ? (
             <div
-              //   className="qualification__content qualification__active"
               className={`qualification__content ${
                 isWork ? "qualification__active" : ""
               }`}
@@ -47,10 +46,10 @@ const QualificationComponent = () => {
                   <h3 className="qualification__title">Software Engineer</h3>
                   <span className="qualification__subtitle">
                     {" "}
-                    Tech Mahindra{" "}
+                    Tavant Technologies{" "}
                   </span>
                   <div className="qualification__calender">
-                    <i className="uil uil-calendar-alt"></i> 2015-2018
+                    <i className="uil uil-calendar-alt"></i> 2021 Dec -2023 Oct
                   </div>
                 </div>
 
@@ -67,20 +66,27 @@ const QualificationComponent = () => {
                   <span className="qualification__line"></span>
                 </div>
                 <div>
-                  <h3 className="qualification__title">Frontend Developer</h3>
-                  <span className="qualification__subtitle"> Mobikasa </span>
+                  <h3 className="qualification__title">Software Engineer</h3>
+                  <span className="qualification__subtitle">
+                    {" "}
+                    Capital Numbers{" "}
+                  </span>
                   <div className="qualification__calender">
-                    <i className="uil uil-calendar-alt"></i> 2018-2019
+                    <i className="uil uil-calendar-alt"></i> 2021 Mar -2021 Dec
                   </div>
                 </div>
               </div>
 
               <div className="qualification__data">
                 <div>
-                  <h3 className="qualification__title">Lead Engineer</h3>
-                  <span className="qualification__subtitle"> HCL </span>
+                  <h3 className="qualification__title">React Engineer</h3>
+                  <span className="qualification__subtitle">
+                    {" "}
+                    Vibrant Info{" "}
+                  </span>
                   <div className="qualification__calender">
-                    <i className="uil uil-calendar-alt"></i> 2019-2020
+                    <i className="uil uil-calendar-alt"></i> 2020 March -2021
+                    March
                   </div>
                 </div>
                 <div>
@@ -89,11 +95,10 @@ const QualificationComponent = () => {
                 </div>
               </div>
 
-              <div className="qualification__data">
+              {/* <div className="qualification__data">
                 <div></div>
                 <div>
                   <span className="qualification__rounder"></span>
-                  {/* <!-- <span className="qualification__line"></span> --> */}
                 </div>
                 <div>
                   <h3 className="qualification__title">UI/UX Engineer</h3>
@@ -102,7 +107,7 @@ const QualificationComponent = () => {
                     <i className="uil uil-calendar-alt"></i> 2020-2023
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           ) : (
             <div
@@ -115,12 +120,12 @@ const QualificationComponent = () => {
             >
               <div className="qualification__data">
                 <div>
-                  <h3 className="qualification__title">HSC, Science</h3>
+                  <h3 className="qualification__title">Diploma</h3>
                   <span className="qualification__subtitle">
-                    St. Mary's Academy
+                    BITS, Sambalpur, ODISHA
                   </span>
                   <div className="qualification__calender">
-                    <i className="uil uil-calendar-alt"></i> 2009-2011
+                    <i className="uil uil-calendar-alt"></i> 2011-2014
                   </div>
                 </div>
 
@@ -137,13 +142,13 @@ const QualificationComponent = () => {
                   {/* <!-- <span className="qualification__line"></span> --> */}
                 </div>
                 <div>
-                  <h3 className="qualification__title">B.Tech, Electronics</h3>
+                  <h3 className="qualification__title">B.Tech</h3>
                   <span className="qualification__subtitle">
                     {" "}
-                    Sharda University{" "}
+                    P.K.A.C.E, Bargarh, ODISHA{" "}
                   </span>
                   <div className="qualification__calender">
-                    <i className="uil uil-calendar-alt"></i> 2011-2015
+                    <i className="uil uil-calendar-alt"></i> 2014-2017
                   </div>
                 </div>
               </div>

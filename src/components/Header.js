@@ -1,11 +1,12 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import { useDispatch, useSelector } from "react-redux";
 import { setSelectedTheme } from "../slices/settings/settingSlice";
 // import { setSelectedTheme } from "../slices/settings/settingApiSlice";
 import { toggleTheme } from "../utils/settings";
 import { Link } from "react-router-dom";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSun, faMoon } from "@fortawesome/free-regular-svg-icons";
 const Header = () => {
   const dispatch = useDispatch();
   const { selectedTheme } = useSelector((state) => state.settingsReducer);
@@ -20,13 +21,30 @@ const Header = () => {
     dispatch(setSelectedTheme(value));
   };
 
+  useEffect(() => {
+    setTheme("dark-theme");
+    toggleTheme("dark-theme");
+    dispatch(setSelectedTheme("dark-theme"));
+  }, [dispatch]);
+
   return (
     <>
       <header className="header" id="header">
         <nav className="nav container">
-          <a href="#" className="nav__logo noSelect">
+          <Link to="/" className="nav__logo noSelect">
             Sayed Abdul Karim
-          </a>
+          </Link>
+
+          {/* <p
+            onClick={() =>
+              console.log({
+                selectedTheme,
+                theme,
+              })
+            }
+          >
+            selectedTheme
+          </p> */}
 
           <div className="nav__menu" id="nav-menu">
             <ul className="nav__list grid">
@@ -58,15 +76,12 @@ const Header = () => {
           </div>
 
           <div className="nav__btns">
-            {/* <!-- theme change button --> */}
-            <button
+            <FontAwesomeIcon
+              icon={selectedTheme ? faSun : faMoon}
               onClick={() =>
                 !theme ? handleChange("dark-theme") : handleChange(null)
               }
-            >
-              <i class="fa-regular fa-sun"></i>
-              Theme
-            </button>
+            />
           </div>
         </nav>
       </header>
