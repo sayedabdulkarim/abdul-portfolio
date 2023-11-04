@@ -105,6 +105,11 @@ const Home = () => {
                 I'm a Full-Stack Developer who loves building for the web &
                 mobile. I spent most of my time designing for upcoming projects
                 and making design resources and tools. Have a good read! 👋🏻
+                {/* <div class="wrap">
+                  blink
+                  <div class="eye blink"></div>
+                  <div class="eye blink"></div>
+                </div> */}
                 <p className="resume_download">
                   Resume
                   <a href="/assets/abdul@resume.pdf" download className="">
