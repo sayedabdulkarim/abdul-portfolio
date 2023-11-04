@@ -3,7 +3,8 @@ import ReactDOM from "react-dom/client";
 // import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles/modules/index.scss";
 import { RouterProvider } from "react-router-dom";
-import { router } from "./config/routeConfig";
+// import { router } from "./config/routeConfig";
+import AppRoutes from "./config/routeConfig";
 import store from "./store";
 import { Provider } from "react-redux";
 import reportWebVitals from "./reportWebVitals";
@@ -12,7 +13,8 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <Provider store={store}>
     <React.StrictMode>
-      <RouterProvider router={router} />
+      <AppRoutes />
+      {/* <RouterProvider router={router} /> */}
     </React.StrictMode>
   </Provider>
 );

@@ -13,19 +13,8 @@ const App = () => {
   const { selectedTheme } = useSelector((state) => state.settingsReducer);
 
   // useEffect(() => {
-  //   if (userInfo) {
-  //     console.log("called if");
-  //     import("./styles/lightTheme/index.scss").then((res) => {
-  //       console.log(res.text(), "turn white");
-  //     });
-  //   } else if (!userInfo) {
-  //     console.log("called else");
-  //     import("./styles/darkTheme/index.scss").then((res) => {
-  //       console.log(res, "turn red");
-  //     });
-  //   }
-  // }, [userInfo]);
-
+  //   navigate("/home");
+  // }, [navigate]);
   return (
     <>
       <ToastContainer />
