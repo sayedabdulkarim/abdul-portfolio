@@ -112,7 +112,12 @@ const Home = () => {
                 </div> */}
                 <p className="resume_download">
                   Resume
-                  <a href="/assets/abdul@resume.pdf" download className="">
+                  {/* <a href="/assets/abdul@resume.pdf" download className=""> */}
+                  <a
+                    href={`${process.env.PUBLIC_URL}/assets/abdul@resume.pdf`}
+                    download
+                    className=""
+                  >
                     <FontAwesomeIcon icon={faArrowRightLong} />
                   </a>
                 </p>
