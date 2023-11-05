@@ -504,6 +504,10 @@ header {
   display: grid;
   gap: 1.5rem;
   grid-template-columns: repeat(5, 1fr);
+  
+  @media screen and (max-width: 768px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .skills__container-box {

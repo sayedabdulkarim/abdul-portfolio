@@ -46,7 +46,7 @@ const Header = () => {
             selectedTheme
           </p> */}
 
-          <div className="nav__menu" id="nav-menu">
+          <div className="nav__menu" id="nav-menu" style={{ display: "none" }}>
             <ul className="nav__list grid">
               {/* <li className="nav__item">
                 <Link to="/" className="nav__link noSelect active-link">

@@ -13,6 +13,11 @@ $cubic: cubic-bezier(0.785, 0.135, 0.15, 0.86);
     -webkit-backdrop-filter: blur(4px);
     background: hsla(0,0%,100%,.212);
     width: 30%;
+
+    @media screen and (max-width: 768px) {
+      width: 88%;
+    }
+
     }
 }
 
