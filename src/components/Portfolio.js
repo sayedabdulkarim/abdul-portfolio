@@ -36,9 +36,11 @@ export default function App() {
             disableOnInteraction: false, // To continue autoplay after user interaction
           }}
           className="mySwiper portfolio__container"
-          style={{
-            height: "310px",
-          }}
+          style={
+            {
+              // height: "310px",
+            }
+          }
         >
           <div class="portfolio__container container swiper-container">
             <div class="swiper-wrapper">
