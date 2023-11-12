@@ -49,17 +49,19 @@ export default function App() {
                 className="portfolio__content grid"
               >
                 <img
-                  src="https://animesh-rawat.web.app/assets/img/portfolio/unichat.PNG"
+                  src="https://res.cloudinary.com/cnq-first/image/upload/v1699790372/image_9_dz40k0.png"
                   alt=""
-                  className="portfolio__img"
+                  className="Snapshot_Spectacle__img"
                 />
                 <div className="portfolio__data">
-                  <h3 className="portfolio__title">Chat Application</h3>
+                  <h3 className="portfolio__title">Snapshot Spectacle</h3>
                   <p className="portfolio__description">
-                    Chat app created using react, firebase and chat-engine.
+                    {/* Chat app created using react, firebase and chat-engine. */}
+                    A cutting-edge Real-time media interaction project that
+                    harnesses the power of JavaScript and IndexedDB
                   </p>
                   <a
-                    href="https://github.com/sayedabdulkarim"
+                    href="https://sayedabdulkarim.github.io/webam_core/"
                     target="_blank"
                     className="button button--flex button--small portfolio__button"
                     rel="noreferrer"
