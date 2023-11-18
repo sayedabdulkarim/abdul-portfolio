@@ -34,6 +34,7 @@ export default function App() {
           autoplay={{
             delay: 2500, // Delay between transitions in ms
             disableOnInteraction: false, // To continue autoplay after user interaction
+            pauseOnMouseEnter: true,
           }}
           className="mySwiper portfolio__container"
           style={
@@ -56,7 +57,6 @@ export default function App() {
                 <div className="portfolio__data">
                   <h3 className="portfolio__title">Snapshot Spectacle</h3>
                   <p className="portfolio__description">
-                    {/* Chat app created using react, firebase and chat-engine. */}
                     A cutting-edge Real-time media interaction project that
                     harnesses the power of JavaScript and IndexedDB
                   </p>
@@ -76,17 +76,21 @@ export default function App() {
                 className="portfolio__content grid"
               >
                 <img
-                  src="https://animesh-rawat.web.app/assets/img/portfolio/unichat.PNG"
+                  src="https://res.cloudinary.com/cnq-first/image/upload/v1700314453/image_7_ommvng.png"
                   alt=""
                   className="portfolio__img"
                 />
                 <div className="portfolio__data">
-                  <h3 className="portfolio__title">Chat Application</h3>
+                  <h3 className="portfolio__title">Sheets Wizardry</h3>
                   <p className="portfolio__description">
-                    Chat app created using react, firebase and chat-engine.
+                    {/* Chat app created using react, firebase and chat-engine. */}
+                    An Google Sheets showcasing advanced data manipulation and
+                    visualization techniques.Features include complex formulas,
+                    custom scripts for enhanced functionality, and dynamic data
+                    visualization.
                   </p>
                   <a
-                    href="https://github.com/sayedabdulkarim"
+                    href="https://sayedabdulkarim.github.io/g_sheet_core/"
                     target="_blank"
                     className="button button--flex button--small portfolio__button"
                     rel="noreferrer"
