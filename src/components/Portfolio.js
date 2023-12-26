@@ -105,17 +105,47 @@ export default function App() {
                 className="portfolio__content grid"
               >
                 <img
-                  src="https://animesh-rawat.web.app/assets/img/portfolio/unichat.PNG"
+                  src="https://res.cloudinary.com/cnq-first/image/upload/v1703608496/image_22_zgalcb.png"
                   alt=""
                   className="portfolio__img"
                 />
                 <div className="portfolio__data">
-                  <h3 className="portfolio__title">Chat Application</h3>
+                  <h3 className="portfolio__title">Foodie's Delight</h3>
                   <p className="portfolio__description">
-                    Chat app created using react, firebase and chat-engine.
+                    A user-centric food delivery application, offering an
+                    interactive menu, and seamless checkout experience.
                   </p>
                   <a
-                    href="https://github.com/sayedabdulkarim"
+                    href="https://food-delivery-ab.vercel.app/"
+                    target="_blank"
+                    className="button button--flex button--small portfolio__button"
+                    rel="noreferrer"
+                  >
+                    Demo
+                    <i className="uil uil-arrow-right button__icon"></i>
+                  </a>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide
+                // data-hash="slide1"
+                className="portfolio__content grid"
+              >
+                <img
+                  src="https://res.cloudinary.com/cnq-first/image/upload/v1703608496/image_23_dqwjmz.png"
+                  alt=""
+                  className="portfolio__img"
+                />
+                <div className="portfolio__data">
+                  <h3 className="portfolio__title">Delish Dashboard</h3>
+                  <p className="portfolio__description">
+                    An intuitive admin panel for managing the Foodie's Delight
+                    delivery service. Features include order oversight, and menu
+                    customization. Developed using React and Node.js for
+                    efficient backend integration.
+                  </p>
+
+                  <a
+                    href="https://food-delivery-admin-one.vercel.app"
                     target="_blank"
                     className="button button--flex button--small portfolio__button"
                     rel="noreferrer"
