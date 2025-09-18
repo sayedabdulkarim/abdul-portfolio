@@ -115,7 +115,8 @@ const Home = () => {
                   Resume
                   {/* <a href="/assets/abdul@resume.pdf" download className=""> */}
                   <a
-                    href={`${process.env.PUBLIC_URL}/assets/abdul@resume.pdf`}
+                    // href={`${process.env.PUBLIC_URL}/assets/abdul@resume.pdf`}
+                    href={`${process.env.PUBLIC_URL}/assets/resume@abdul_psn.pdf`}
                     download
                     className=""
                   >
