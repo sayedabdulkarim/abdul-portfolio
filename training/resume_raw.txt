@@ -1,0 +1,65 @@
+Work Links
+GitHub - https://github.com/sayedabdulkarim
+Portfolio - https://sayedabdulkarim.github.io/abdul-portfolio/
+Professional Work
+1 - Vibrant Info
+Nodwin Vendor Portal -  HTML5 ,CSS3, Bootstrap,ReactSSR, ContextApi, Redux, api integration, Unit Testing, BIT
+Bucket, Node, Express, MongoDB, S3 bucket, cloudinary, Firebase. URL
+Alwar Soft - HTML5 ,CSS3, Material UI, ReactJs,Router, Redux(saga), api integration, Unit Testing, BIT Bucket,
+Typescript, Node, Express, MongoDB, Firebase, Zendesk.
+2 - Capital Numbers
+ DewSquad ( UserEnd ) - HTML5 ,CSS3, Material UI, NextJs,Redux Toolkit, api integration, Unit Testing, BIT
+Bucket, Typescript, Node, Express, MongoDB. URL
+ DewSquad ( Admin ) - HTML5 ,CSS3, Material UI, NextJS, Router, Redux(thunk), API integration, Unit Testing,
+BIT Bucket.
+3- Tavant Technologies
+Scalable Legal - HTML5 ,CSS3, Material UI, ReactJS, Router, Redux(toolkit), API integration, Unit Testing, GIT,
+Google Map API, Twilio Chat, Typescript, Node, Express, MongoDB, Firebase, Zendesk, Web-Accessibility. URL
+winﬁeldUnited - HTML5, CSS3, jQuery, Javascript, Foundation Framework, Bootstrap, Kentico. URLs : WUC,
+WUCA, PORTAL, CROPLAN, TOOLSTAGE
+4 - Publicis Sapient
+Patient Portal - For Optum patients who were previously with HealthCare Partners or AppleCare Medical Group.
+Tech Used: React Native, TypeScript, Firebase, Abyss CSS framework, React Testing Library, Jest.
+URLs: Android App: Google Play Store, iOS App: Apple App Store, Web App: Patient Portal Web.
+Company Timesheet App - Desktop portal app to consolidate timesheet submissions across three platforms into a
+single portal.
+Tech Used: React, Electron, Node.js, Express, Firebase, XLSX, PapaParse, CSV-Parser, Nodemailer.
+Professional Skills
+Front-End Development, Web Development, HTML, CSS, Javascript, Jquery, React.js, Routers, Redux, Context Api,
+Node.js, Express.js, MongoDB, PassportJs, JWT(Json Web Token), Bootstrap, Es6, JQuery, Next JS, Redux toolkit, Google
+Map API, Twillio, Material UI, Bootstrap, redux thunk, redux saga, webpack, babel, axios, Typescript, React Testing
+Library, Jest, Kentico CMS, Storybook, GraphQL, Web Accessibility, React Native, ElectronJS, webRTC, socketIO, Zustand,
+LLM, RAG, AI Agent, FastAPI, Prompt EngineeringSayed Abdul Karim
+sakarim9124@gmail.com 
+08296708008 
+Bengaluru, KarnatakaPersonal Works
+Food Delivery App (Client & Admin Portals, Server API)
+Client Portal:Built with React, Redux Toolkit, TypeScript, SCSS, Font Face Observer for async font loading
+and Google Maps. Secured with JWT and CSRF tokens. URL
+Admin Portal: Order and data management using the same client tech stack. URL
+Server API: Node.js, Express, MongoDB, Firebase (OTP, CSRF), JWT, Prompt Engineering, LLM, Sentiment
+Analysis.
+Synth AI - No-Code Application Generator
+Client-Side: Built with React, TypeScript, Emotion (CSS-in-JS), Material-UI, monaco-editor and Socket.io-
+client for real-time terminal communication, with persistent API key management and WebSocket
+connection handling. URL
+Backend: Developed with Node.js, Express, and ﬁle-based storage; implemented AI-powered code
+generation using Anthropic & MCP (Model Context Protocol), real-time terminal emulation with node-pty,
+project lifecycle management, and dynamic proxy routing for live previews..
+Employment History
+Senior Experience Engineer
+Publicis Sapient • Bengaluru
+12/2023 - Present
+Software Engineer
+Tavant Technologies Pvt. Ltd • Bengaluru, Karnataka
+11/2021 - 10/2023
+Software Engineer
+Capital Number • Kolkata, West Bengal
+04/2021 - 11/2021
+React JS Developer
+Vibrant Info • Bangalore, Karnataka
+03/2020 - 04/2021
+Education
+BTech
+PKACE,Bargarh • Bargarh, Odisha
+Graduated - 06/2017

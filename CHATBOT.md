@@ -31,13 +31,13 @@ Building a hybrid AI chatbot using **RAG + Fine-tuned Llama 3.2 1B** for portfol
 - [x] Handle error states gracefully
 - [x] Update header to "Sayed Abdul Karim"
 
-## 🔄 Phase 3: Model Training (IN PROGRESS)
-- [ ] Extract resume data from PDF
-- [ ] Create structured resume JSON
-- [ ] Generate Q&A training pairs
-- [ ] Create data variations (10x amplification)
-- [ ] Convert to JSONL format for training
-- [ ] Set up Google Colab notebook
+## ✅ Phase 3: Model Training (READY TO TRAIN)
+- [x] Extract resume data from PDF
+- [x] Create structured resume JSON
+- [x] Generate Q&A training pairs (45 pairs created)
+- [x] Create data variations (10x amplification)
+- [x] Convert to JSONL format for training
+- [x] Set up Google Colab notebook
 - [ ] Fine-tune Llama 3.2 1B with Unsloth
 - [ ] Export model in GGUF format
 - [ ] Upload to Hugging Face or Replicate
@@ -159,7 +159,7 @@ REACT_APP_API_URL=<backend_url>
 | Deployment | ⏳ Pending | 1 day | - |
 | Testing | ⏳ Pending | 1 day | - |
 
-**Total Progress: 40% Complete**
+**Total Progress: 60% Complete**
 
 ---
 

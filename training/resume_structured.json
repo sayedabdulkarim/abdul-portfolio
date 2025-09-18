@@ -1,0 +1,323 @@
+{
+  "personal": {
+    "name": "Sayed Abdul Karim",
+    "nickname": "Abdul",
+    "email": "sakarim9124@gmail.com",
+    "phone": "08296708008",
+    "current_role": "Senior Experience Engineer",
+    "current_company": "Publicis Sapient",
+    "location": "Bengaluru, Karnataka, India",
+    "github": "https://github.com/sayedabdulkarim",
+    "portfolio": "https://sayedabdulkarim.github.io/abdul-portfolio/"
+  },
+  "experience": [
+    {
+      "company": "Publicis Sapient",
+      "role": "Senior Experience Engineer",
+      "location": "Bengaluru",
+      "duration": "12/2023 - Present",
+      "projects": [
+        {
+          "name": "Patient Portal",
+          "description": "For Optum patients who were previously with HealthCare Partners or AppleCare Medical Group",
+          "tech": [
+            "React Native",
+            "TypeScript",
+            "Firebase",
+            "Abyss CSS framework",
+            "React Testing Library",
+            "Jest"
+          ],
+          "platforms": [
+            "Android App",
+            "iOS App",
+            "Web App"
+          ]
+        },
+        {
+          "name": "Company Timesheet App",
+          "description": "Desktop portal app to consolidate timesheet submissions across three platforms into a single portal",
+          "tech": [
+            "React",
+            "Electron",
+            "Node.js",
+            "Express",
+            "Firebase",
+            "XLSX",
+            "PapaParse",
+            "CSV-Parser",
+            "Nodemailer"
+          ]
+        }
+      ]
+    },
+    {
+      "company": "Tavant Technologies",
+      "role": "Software Engineer",
+      "location": "Bengaluru, Karnataka",
+      "duration": "11/2021 - 10/2023",
+      "projects": [
+        {
+          "name": "Scalable Legal",
+          "tech": [
+            "HTML5",
+            "CSS3",
+            "Material UI",
+            "ReactJS",
+            "Redux Toolkit",
+            "TypeScript",
+            "Node",
+            "Express",
+            "MongoDB",
+            "Firebase",
+            "Google Map API",
+            "Twilio Chat",
+            "Zendesk",
+            "Web-Accessibility"
+          ]
+        },
+        {
+          "name": "winfieldUnited",
+          "tech": [
+            "HTML5",
+            "CSS3",
+            "jQuery",
+            "Javascript",
+            "Foundation Framework",
+            "Bootstrap",
+            "Kentico"
+          ],
+          "sites": [
+            "WUC",
+            "WUCA",
+            "PORTAL",
+            "CROPLAN",
+            "TOOLSTAGE"
+          ]
+        }
+      ]
+    },
+    {
+      "company": "Capital Numbers",
+      "role": "Software Engineer",
+      "location": "Kolkata, West Bengal",
+      "duration": "04/2021 - 11/2021",
+      "projects": [
+        {
+          "name": "DewSquad (UserEnd)",
+          "tech": [
+            "HTML5",
+            "CSS3",
+            "Material UI",
+            "NextJs",
+            "Redux Toolkit",
+            "TypeScript",
+            "Node",
+            "Express",
+            "MongoDB"
+          ]
+        },
+        {
+          "name": "DewSquad (Admin)",
+          "tech": [
+            "HTML5",
+            "CSS3",
+            "Material UI",
+            "NextJS",
+            "Router",
+            "Redux(thunk)",
+            "API integration"
+          ]
+        }
+      ]
+    },
+    {
+      "company": "Vibrant Info",
+      "role": "React JS Developer",
+      "location": "Bangalore, Karnataka",
+      "duration": "03/2020 - 04/2021",
+      "projects": [
+        {
+          "name": "Nodwin Vendor Portal",
+          "tech": [
+            "HTML5",
+            "CSS3",
+            "Bootstrap",
+            "ReactSSR",
+            "ContextApi",
+            "Redux",
+            "Node",
+            "Express",
+            "MongoDB",
+            "S3 bucket",
+            "cloudinary",
+            "Firebase"
+          ]
+        },
+        {
+          "name": "Alwar Soft",
+          "tech": [
+            "HTML5",
+            "CSS3",
+            "Material UI",
+            "ReactJs",
+            "Redux(saga)",
+            "TypeScript",
+            "Node",
+            "Express",
+            "MongoDB",
+            "Firebase",
+            "Zendesk"
+          ]
+        }
+      ]
+    }
+  ],
+  "personal_projects": [
+    {
+      "name": "Food Delivery App",
+      "description": "Complete food delivery system with client, admin and server components",
+      "components": {
+        "client_portal": {
+          "description": "Built with React, Redux Toolkit, TypeScript, SCSS, Font Face Observer for async font loading and Google Maps. Secured with JWT and CSRF tokens",
+          "tech": [
+            "React",
+            "Redux Toolkit",
+            "TypeScript",
+            "SCSS",
+            "Google Maps",
+            "JWT",
+            "CSRF"
+          ],
+          "url": "URL provided"
+        },
+        "admin_portal": {
+          "description": "Order and data management using the same client tech stack",
+          "tech": [
+            "React",
+            "Redux Toolkit",
+            "TypeScript",
+            "SCSS"
+          ],
+          "url": "URL provided"
+        },
+        "server_api": {
+          "description": "Backend API with authentication, real-time features and AI integration",
+          "tech": [
+            "Node.js",
+            "Express",
+            "MongoDB",
+            "Firebase (OTP, CSRF)",
+            "JWT",
+            "Prompt Engineering",
+            "LLM",
+            "Sentiment Analysis"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Synth AI - No-Code Application Generator",
+      "description": "AI-powered no-code platform for application generation",
+      "components": {
+        "client": {
+          "description": "Built with React, TypeScript, Emotion (CSS-in-JS), Material-UI, monaco-editor and Socket.io-client for real-time terminal communication, with persistent API key management and WebSocket connection handling",
+          "tech": [
+            "React",
+            "TypeScript",
+            "Emotion",
+            "Material-UI",
+            "monaco-editor",
+            "Socket.io-client",
+            "WebSocket"
+          ],
+          "url": "URL provided"
+        },
+        "backend": {
+          "description": "Developed with Node.js, Express, and file-based storage; implemented AI-powered code generation using Anthropic & MCP (Model Context Protocol), real-time terminal emulation with node-pty, project lifecycle management, and dynamic proxy routing for live previews",
+          "tech": [
+            "Node.js",
+            "Express",
+            "Anthropic",
+            "MCP",
+            "node-pty",
+            "Dynamic Proxy Routing"
+          ]
+        }
+      }
+    }
+  ],
+  "skills": {
+    "languages": [
+      "JavaScript",
+      "TypeScript",
+      "HTML",
+      "CSS",
+      "SQL"
+    ],
+    "frontend": [
+      "React.js",
+      "React Native",
+      "Next.js",
+      "Redux",
+      "Redux Toolkit",
+      "Context API",
+      "Material UI",
+      "Bootstrap",
+      "Tailwind CSS",
+      "Emotion",
+      "SCSS"
+    ],
+    "backend": [
+      "Node.js",
+      "Express.js",
+      "FastAPI"
+    ],
+    "databases": [
+      "MongoDB",
+      "Firebase",
+      "PostgreSQL"
+    ],
+    "tools": [
+      "Git",
+      "Webpack",
+      "Babel",
+      "Jest",
+      "React Testing Library",
+      "Storybook",
+      "Electron",
+      "Docker"
+    ],
+    "cloud": [
+      "AWS",
+      "S3",
+      "Cloudinary",
+      "Firebase"
+    ],
+    "ai_ml": [
+      "LLM",
+      "RAG",
+      "AI Agent",
+      "Prompt Engineering",
+      "MCP (Model Context Protocol)"
+    ],
+    "other": [
+      "WebRTC",
+      "Socket.IO",
+      "GraphQL",
+      "Web Accessibility",
+      "JWT",
+      "PassportJs",
+      "Twilio",
+      "Google Maps API",
+      "Zendesk",
+      "Kentico CMS"
+    ]
+  },
+  "education": {
+    "degree": "BTech",
+    "institution": "PKACE, Bargarh",
+    "location": "Bargarh, Odisha",
+    "graduation_year": "2017"
+  }
+}
