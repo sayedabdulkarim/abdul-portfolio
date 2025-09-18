@@ -29,3 +29,8 @@ pdfplumber==0.10.3
 requests==2.31.0
 aiofiles==23.2.1
 redis==5.0.1  # For caching
+
+# Optional: Local Model Support
+# Uncomment based on your choice:
+# llama-cpp-python==0.2.55  # For GGUF files
+# ollama==0.1.7  # For Ollama integration

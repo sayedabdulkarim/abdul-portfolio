@@ -17,7 +17,24 @@ class LLMService:
     async def initialize(self):
         """Initialize the LLM service with fine-tuned model"""
         try:
-            if self.model_type == "replicate":
+            if self.model_type == "ollama":
+                # Use Ollama for local testing
+                self.model_name = os.getenv("OLLAMA_MODEL", "abdul-llama")
+                self.is_initialized = True
+                print(f"✅ LLM Service initialized with Ollama: {self.model_name}")
+                
+            elif self.model_type == "llamacpp":
+                # Use llama-cpp-python for direct GGUF loading
+                from llama_cpp import Llama
+                self.model = Llama(
+                    model_path=os.getenv("MODEL_PATH", "./models/abdul-llama.gguf"),
+                    n_ctx=2048,
+                    n_gpu_layers=-1,  # Use all available GPU layers
+                )
+                self.is_initialized = True
+                print("✅ LLM Service initialized with llama.cpp")
+                
+            elif self.model_type == "replicate":
                 # Use Replicate for hosted fine-tuned model
                 self.client = replicate.Client(api_token=os.getenv("REPLICATE_API_TOKEN"))
                 # Replace with your fine-tuned model after training
@@ -61,7 +78,11 @@ class LLMService:
             # Construct the full prompt with context and persona
             full_prompt = self._construct_prompt(prompt, context)
             
-            if self.model_type == "replicate":
+            if self.model_type == "ollama":
+                output = await self._generate_ollama(full_prompt, temperature)
+            elif self.model_type == "llamacpp":
+                output = await self._generate_llamacpp(full_prompt, temperature)
+            elif self.model_type == "replicate":
                 output = await self._generate_replicate(full_prompt, temperature)
             elif self.model_type == "huggingface":
                 output = await self._generate_huggingface(full_prompt, temperature)
@@ -120,6 +141,43 @@ User: {user_query}
 Sarim:"""
         
         return prompt
+    
+    async def _generate_ollama(self, prompt: str, temperature: float) -> str:
+        """Generate using Ollama local server"""
+        import requests
+        try:
+            response = requests.post(
+                "http://localhost:11434/api/generate",
+                json={
+                    "model": self.model_name,
+                    "prompt": prompt,
+                    "temperature": temperature,
+                    "stream": False
+                },
+                timeout=30
+            )
+            if response.status_code == 200:
+                return response.json()["response"]
+            else:
+                raise Exception(f"Ollama error: {response.text}")
+        except Exception as e:
+            print(f"Ollama generation error: {e}")
+            raise e
+    
+    async def _generate_llamacpp(self, prompt: str, temperature: float) -> str:
+        """Generate using llama.cpp"""
+        try:
+            output = self.model(
+                prompt,
+                max_tokens=256,
+                temperature=temperature,
+                stop=["User:", "\n\n"],
+                echo=False
+            )
+            return output['choices'][0]['text'].strip()
+        except Exception as e:
+            print(f"Llama.cpp generation error: {e}")
+            raise e
     
     async def _generate_replicate(self, prompt: str, temperature: float) -> str:
         """Generate using Replicate API"""
