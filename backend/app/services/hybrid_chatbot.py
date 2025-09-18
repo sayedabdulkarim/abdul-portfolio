@@ -125,15 +125,15 @@ class HybridChatbot:
         """
         # Define critical facts that should be accurate
         facts = {
-            "current_company": "Mira",
-            "current_role": "Senior Software Engineer",
-            "name_variations": ["Sarim", "Sayed Abdul Karim", "Sarim Ahmed"],
-            "main_project": "PennyWise"
+            "current_company": "Publicis Sapient",
+            "current_role": "Senior Experience Engineer",
+            "name_variations": ["Abdul", "Sayed Abdul Karim"],
+            "main_projects": ["Food Delivery App", "Synth AI", "Patient Portal"]
         }
         
         # Simple validation - ensure company name is correct if mentioned
         if "work at" in response.lower() or "working at" in response.lower():
-            if "mira" not in response.lower() and any(
+            if "publicis" not in response.lower() and "sapient" not in response.lower() and any(
                 phrase in response.lower() 
                 for phrase in ["currently", "now", "present"]
             ):
@@ -144,6 +144,8 @@ class HybridChatbot:
                     "Microsoft", facts["current_company"]
                 ).replace(
                     "Amazon", facts["current_company"]
+                ).replace(
+                    "Mira", facts["current_company"]
                 )
         
         return response
@@ -152,9 +154,11 @@ class HybridChatbot:
         """Lightweight fact validation for streaming"""
         # Quick validation for streaming - just check critical keywords
         replacements = {
-            "Google": "Mira",  # If model hallucinates wrong company
-            "Microsoft": "Mira",
-            "CEO": "Senior Software Engineer",  # Correct role if needed
+            "Google": "Publicis Sapient",  # If model hallucinates wrong company
+            "Microsoft": "Publicis Sapient",
+            "Mira": "Publicis Sapient",
+            "CEO": "Senior Experience Engineer",  # Correct role if needed
+            "Sarim": "Abdul",  # Correct nickname if needed
         }
         
         for wrong, correct in replacements.items():

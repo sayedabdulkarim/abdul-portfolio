@@ -7,7 +7,7 @@ const ChatBot = () => {
   const [messages, setMessages] = useState([
     {
       role: 'assistant',
-      content: "Hi! I'm Sarim. Ask me about my projects, experience, or tech stack!",
+      content: "Hi! I'm Sayed Abdul Karim. Ask me about my projects, experience, or tech stack!",
       timestamp: new Date()
     }
   ]);

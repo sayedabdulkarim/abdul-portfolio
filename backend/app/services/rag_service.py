@@ -110,28 +110,35 @@ class RAGService:
         except:
             # Return default structured data
             return {
-                "name": "Sayed Abdul Karim (Sarim)",
-                "current_role": "Senior Software Engineer at Mira",
+                "name": "Sayed Abdul Karim",
+                "nickname": "Abdul",
+                "current_role": "Senior Experience Engineer at Publicis Sapient",
                 "experience": [
                     {
-                        "company": "Mira",
-                        "role": "Senior Software Engineer",
-                        "duration": "2023 - Present",
-                        "description": "Leading development of scalable applications"
+                        "company": "Publicis Sapient",
+                        "role": "Senior Experience Engineer",
+                        "duration": "12/2023 - Present",
+                        "description": "Leading development of Patient Portal and Timesheet applications"
                     },
                     {
-                        "company": "Spaient",
-                        "role": "Full-stack Developer",
-                        "duration": "2021 - 2023",
-                        "description": "Developed multiple web applications using React and Node.js"
+                        "company": "Tavant Technologies",
+                        "role": "Software Engineer",
+                        "duration": "11/2021 - 10/2023",
+                        "description": "Developed Scalable Legal platform and winfieldUnited projects"
                     }
                 ],
                 "projects": [
                     {
-                        "name": "PennyWise",
-                        "description": "A comprehensive expense tracking application with budget management",
-                        "tech": ["React", "Node.js", "MongoDB", "Chart.js"],
-                        "highlights": ["Real-time expense tracking", "Budget alerts", "Data visualization"]
+                        "name": "Food Delivery App",
+                        "description": "Complete food delivery system with client, admin and server components",
+                        "tech": ["React", "Redux Toolkit", "TypeScript", "Node.js", "MongoDB", "JWT"],
+                        "highlights": ["Client and Admin portals", "Secure authentication", "Real-time tracking"]
+                    },
+                    {
+                        "name": "Synth AI",
+                        "description": "No-Code Application Generator with AI-powered code generation",
+                        "tech": ["React", "TypeScript", "Node.js", "Anthropic", "MCP", "Socket.io"],
+                        "highlights": ["AI code generation", "Real-time terminal", "Live previews"]
                     }
                 ],
                 "skills": {
@@ -155,7 +162,7 @@ class RAGService:
         chunks = []
         
         # Personal info
-        chunks.append(f"I am {data['name']}, currently working as {data['current_role']}")
+        chunks.append(f"I am {data['name']}, also known as {data.get('nickname', 'Abdul')}, currently working as {data['current_role']}")
         
         # Experience
         for exp in data.get('experience', []):
@@ -188,19 +195,22 @@ class RAGService:
     def _get_fallback_resume_text(self) -> str:
         """Fallback resume text if PDF extraction fails"""
         return """
-        Sayed Abdul Karim (Sarim)
-        Senior Software Engineer at Mira
+        Sayed Abdul Karim (Abdul)
+        Senior Experience Engineer at Publicis Sapient
         
         EXPERIENCE:
-        - Senior Software Engineer at Mira (2023 - Present)
+        - Senior Experience Engineer at Publicis Sapient (12/2023 - Present)
           Leading development of scalable applications, mentoring junior developers
         
-        - Full-stack Developer at Spaient (2021 - 2023)
+        - Software Engineer at Tavant Technologies (11/2021 - 10/2023)
           Developed multiple web applications using React and Node.js
         
         PROJECTS:
-        - PennyWise: Expense tracking application with budget management
-          Technologies: React, Node.js, MongoDB, Chart.js
+        - Food Delivery App: Complete system with client, admin and server
+          Technologies: React, Redux Toolkit, TypeScript, Node.js, MongoDB
+        
+        - Synth AI: No-Code Application Generator
+          Technologies: React, TypeScript, Anthropic, MCP, Socket.io
         
         SKILLS:
         - Languages: JavaScript, TypeScript, Python
