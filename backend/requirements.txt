@@ -1,36 +1,4 @@
-# FastAPI and Server
 fastapi==0.104.1
 uvicorn[standard]==0.24.0
-python-multipart==0.0.6
-python-dotenv==1.0.0
-pydantic==2.5.0
-
-# CORS and Security
-python-jose[cryptography]==3.3.0
-passlib[bcrypt]==1.7.4
-
-# Vector Database and RAG
-langchain==0.1.0
-chromadb==0.4.22
-sentence-transformers==2.2.2
-openai==1.6.1
-
-# Fine-tuned Model Integration
-replicate==0.22.0
-huggingface-hub==0.19.4
-transformers==4.36.0
-torch==2.1.2
-
-# PDF Processing
-PyPDF2==3.0.1
-pdfplumber==0.10.3
-
-# Utilities
 requests==2.31.0
-aiofiles==23.2.1
-redis==5.0.1  # For caching
-
-# Optional: Local Model Support
-# Uncomment based on your choice:
-# llama-cpp-python==0.2.55  # For GGUF files
-# ollama==0.1.7  # For Ollama integration
+python-dotenv==1.0.0
