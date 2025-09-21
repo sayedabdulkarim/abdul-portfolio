@@ -29,7 +29,7 @@ class handler(BaseHTTPRequestHandler):
                 message = data.get('message', '')
                 
                 HF_TOKEN = os.environ.get("HF_TOKEN")
-                API_URL = "https://api-inference.huggingface.co/models/Abdul8008/abdul-portfolio-chatbot"
+                API_URL = "https://asrv3o4maqv2zfpl.us-east-1.aws.endpoints.huggingface.cloud"
                 
                 headers = {"Authorization": f"Bearer {HF_TOKEN}"}
                 prompt = f"User: {message}\nAssistant:"
