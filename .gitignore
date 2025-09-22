@@ -22,3 +22,23 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Large model files - EXCLUDE FROM GIT
+training/abdul-llama-merged/
+replicate_deployment/model/
+*.safetensors
+*.gguf
+*.bin
+
+# Python
+backend/__pycache__/
+backend/app/__pycache__/
+backend/app/services/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Backend test files
+backend/test_*.py
+test_*.py

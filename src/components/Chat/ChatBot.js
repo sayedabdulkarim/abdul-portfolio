@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import ChatModal from './ChatModal';
+import { sendMessageToBot } from '../../utils/chatAPI';
 import './ChatBot.scss';
 
 const ChatBot = () => {
@@ -31,41 +32,52 @@ const ChatBot = () => {
     setIsTyping(true);
 
     try {
-      // Call backend API
-      const response = await fetch(`${process.env.REACT_APP_API_URL || 'http://localhost:8000'}/api/chat`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          message: message,
-          conversation_id: localStorage.getItem('conversation_id')
-        }),
-      });
-
-      const data = await response.json();
+      // Prepare conversation history as pairs of [user, assistant] messages
+      // Important: We're working with messages BEFORE the new user message was added
+      const conversationHistory = [];
       
-      // Store conversation ID
-      if (data.conversation_id) {
-        localStorage.setItem('conversation_id', data.conversation_id);
+      // Look for complete user-assistant pairs in the existing messages
+      let i = 0;
+      while (i < messages.length - 1) {
+        // Find a user message followed by an assistant message
+        if (messages[i].role === 'user' && messages[i + 1].role === 'assistant') {
+          conversationHistory.push([
+            messages[i].content,
+            messages[i + 1].content
+          ]);
+          i += 2;
+        } else if (messages[i].role === 'assistant') {
+          // Skip standalone assistant messages (like the initial greeting)
+          i++;
+        } else {
+          i++;
+        }
       }
+      
+      // Keep only last 2 exchanges for context
+      const recentHistory = conversationHistory.slice(-2);
+      
+      console.log('Current messages:', messages);
+      console.log('Sending conversation history:', recentHistory);
+
+      // Call the API utility
+      const botResponse = await sendMessageToBot(message, recentHistory);
 
       // Add bot response
       const botMessage = {
         role: 'assistant',
-        content: data.response,
-        timestamp: new Date(),
-        sources: data.sources
+        content: botResponse,
+        timestamp: new Date()
       };
       
       setMessages(prev => [...prev, botMessage]);
     } catch (error) {
       console.error('Error sending message:', error);
       
-      // Fallback response
+      // Show error but keep trying
       const errorMessage = {
         role: 'assistant',
-        content: "I'm having trouble connecting right now. Please try again in a moment.",
+        content: `Error: ${error.message}. The API might be loading, please try again.`,
         timestamp: new Date()
       };
       setMessages(prev => [...prev, errorMessage]);

@@ -1,8 +1,7 @@
 # Ollama Modelfile for Abdul's Fine-tuned Llama 3.2 1B
-# Usage: ollama create abdul-llama -f Modelfile
+# This uses the safetensors format directly
 
-# Use the base Llama model and apply our fine-tuning
-FROM llama3.2:1b
+FROM /Users/saykarim/Desktop/me/resume/model.safetensors
 
 TEMPLATE """{{ .System }}
 

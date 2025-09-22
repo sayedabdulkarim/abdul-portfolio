@@ -1,0 +1,16 @@
+{
+  "architectures": ["LlamaForCausalLM"],
+  "model_type": "llama",
+  "tokenizer_config": {
+    "clean_up_tokenization_spaces": false,
+    "eos_token": "<|eot_id|>",
+    "pad_token": "<|finetune_right_pad_id|>"
+  },
+  "pipeline_tag": "text-generation",
+  "tags": ["text-generation"],
+  "widget": [
+    {
+      "text": "Who is Abdul?"
+    }
+  ]
+}

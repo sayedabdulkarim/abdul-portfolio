@@ -1,0 +1,7 @@
+gradio==4.44.1
+transformers==4.35.2
+torch==2.0.1
+accelerate==0.24.1
+sentencepiece==0.1.99
+websockets==11.0.3
+gradio-client==1.3.0
