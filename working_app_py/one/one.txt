@@ -1,0 +1,135 @@
+import gradio as gr
+from transformers import AutoModelForCausalLM, AutoTokenizer
+import torch
+
+print("Loading model with clean approach...")
+
+try:
+    # Load tokenizer
+    tokenizer = AutoTokenizer.from_pretrained("gpt2")
+    tokenizer.pad_token = tokenizer.eos_token
+    print("✅ Tokenizer loaded!")
+    
+    # Skip PEFT for now - load base model directly
+    print("Loading Llama base model...")
+    model = AutoModelForCausalLM.from_pretrained(
+        "unsloth/Llama-3.2-1B-Instruct",
+        torch_dtype=torch.float16 if torch.cuda.is_available() else torch.float32,
+        device_map="auto" if torch.cuda.is_available() else None,
+        trust_remote_code=True,
+        load_in_4bit=False,  # Disable 4-bit to avoid issues
+        low_cpu_mem_usage=True
+    )
+    print("✅ Model loaded!")
+    
+    # Try to load adapter weights manually if possible
+    try:
+        from safetensors import safe_open
+        import requests
+        
+        # Download adapter weights
+        url = "https://huggingface.co/Abdul8008/abdul-portfolio-chatbot/resolve/main/adapter_model.safetensors"
+        response = requests.get(url, stream=True)
+        
+        if response.status_code == 200:
+            with open("/tmp/adapter.safetensors", "wb") as f:
+                f.write(response.content)
+            
+            # Load adapter weights
+            with safe_open("/tmp/adapter.safetensors", framework="pt") as f:
+                for key in f.keys():
+                    if key in model.state_dict():
+                        model.state_dict()[key].copy_(f.get_tensor(key))
+            
+            print("✅ Adapter weights loaded manually!")
+        else:
+            print("⚠️ Could not download adapter weights")
+            
+    except Exception as e:
+        print(f"⚠️ Manual adapter loading failed: {e}")
+    
+except Exception as e:
+    print(f"Error: {e}")
+    # Fallback to GPT-2
+    model = AutoModelForCausalLM.from_pretrained("gpt2")
+    tokenizer = AutoTokenizer.from_pretrained("gpt2")
+    tokenizer.pad_token = tokenizer.eos_token
+
+def generate_response(message, history):
+    """Generate response"""
+    
+    # Training format
+    prompt = f"""<|begin_of_text|><|start_header_id|>system<|end_header_id|>
+
+You are an AI assistant representing Sayed Abdul Karim. Answer questions about his professional background, experience, and skills based on the information you've been trained on.<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+{message}<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+I am Sayed Abdul Karim, a Senior Experience Engineer at Publicis Sapient with over 4 years of experience. """
+    
+    inputs = tokenizer(prompt, return_tensors="pt", truncation=True, max_length=512)
+    
+    with torch.no_grad():
+        outputs = model.generate(
+            **inputs,
+            max_new_tokens=150,
+            temperature=0.7,
+            top_p=0.9,
+            do_sample=True,
+            pad_token_id=tokenizer.pad_token_id
+        )
+    
+    response = tokenizer.decode(outputs[0], skip_special_tokens=True)
+    
+    # Extract response
+    if "assistant<|end_header_id|>" in response:
+        response = response.split("assistant<|end_header_id|>")[-1].strip()
+    else:
+        response = response[len(prompt):].strip()
+    
+    # Ensure response starts properly
+    if not response.startswith("I am") and not response.startswith("I'm"):
+        response = f"I am Sayed Abdul Karim. {response}"
+    
+    return response
+
+# Gradio interface
+with gr.Blocks(title="Abdul's Portfolio Chatbot") as demo:
+    gr.Markdown(
+        """
+        # 🤖 Abdul's Portfolio Chatbot
+        
+        **Llama 3.2 1B Model**
+        
+        Senior Experience Engineer | 4+ Years | React, Node.js, AWS
+        """
+    )
+    
+    chatbot = gr.Chatbot(height=450)
+    msg = gr.Textbox(placeholder="Ask about my experience...")
+    
+    with gr.Row():
+        submit = gr.Button("Send 📤")
+        clear = gr.Button("Clear 🗑️")
+    
+    gr.Examples(
+        examples=[
+            "Who are you?",
+            "What is your experience?",
+            "What technologies do you know?",
+            "Tell me about your projects"
+        ],
+        inputs=msg
+    )
+    
+    def respond(message, history):
+        bot_response = generate_response(message, history)
+        history.append((message, bot_response))
+        return "", history
+    
+    msg.submit(respond, [msg, chatbot], [msg, chatbot])
+    submit.click(respond, [msg, chatbot], [msg, chatbot])
+    clear.click(lambda: None, None, chatbot, queue=False)
+
+if __name__ == "__main__":
+    demo.launch()

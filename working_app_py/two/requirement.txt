@@ -1,0 +1,7 @@
+gradio==5.46.1
+transformers==4.56.2
+torch==2.4.0
+safetensors==0.4.5
+requests==2.32.3
+tokenizers==0.22.1
+accelerate==0.34.2
