@@ -6,7 +6,8 @@ import { setSelectedTheme } from "../slices/settings/settingSlice";
 import { toggleTheme } from "../utils/settings";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSun, faMoon } from "@fortawesome/free-regular-svg-icons";
+import { faSun, faMoon, faFileAlt } from "@fortawesome/free-regular-svg-icons";
+import { faLinkedin, faGithub, faMedium } from "@fortawesome/free-brands-svg-icons";
 const Header = () => {
   const dispatch = useDispatch();
   const { selectedTheme } = useSelector((state) => state.settingsReducer);
@@ -76,8 +77,41 @@ const Header = () => {
           </div>
 
           <div className="nav__btns">
+            <a
+              href="https://www.linkedin.com/in/sayed4747/"
+              target="_blank"
+              className="social-icon"
+              rel="noreferrer"
+            >
+              <FontAwesomeIcon icon={faLinkedin} />
+            </a>
+            <a
+              href="https://github.com/sayedabdulkarim"
+              target="_blank"
+              className="social-icon"
+              rel="noreferrer"
+            >
+              <FontAwesomeIcon icon={faGithub} />
+            </a>
+            <a
+              href="https://medium.com/@sakarim9124"
+              target="_blank"
+              className="social-icon"
+              rel="noreferrer"
+            >
+              <FontAwesomeIcon icon={faMedium} />
+            </a>
+            <a
+              href={`${process.env.PUBLIC_URL}/assets/resume@abdul_psn.pdf`}
+              download
+              className="social-icon"
+              title="Download Resume"
+            >
+              <FontAwesomeIcon icon={faFileAlt} />
+            </a>
             <FontAwesomeIcon
               icon={selectedTheme ? faSun : faMoon}
+              className="theme-toggle"
               onClick={() =>
                 !theme ? handleChange("dark-theme") : handleChange(null)
               }

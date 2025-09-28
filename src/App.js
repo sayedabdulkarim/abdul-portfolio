@@ -20,9 +20,9 @@ const App = () => {
     <>
       <ToastContainer />
       <Header />
-      <Container className="my-2">
+      <div className="my-2">
         <Outlet />
-      </Container>
+      </div>
       <ChatBot />
     </>
   );
