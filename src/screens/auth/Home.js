@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 import WorkExperience from "../../components/WorkExperience";
 import Projects from "../../components/Projects";
+import ProjectsGrid from "../../components/ProjectsGrid";
 import NavigationTabs from "../../components/NavigationTabs";
 import Blog from "../../components/Blog";
 import Contact from "../../components/Contact";
@@ -29,7 +30,7 @@ const Home = () => {
       case 'about':
         return <WorkExperience />;
       case 'projects':
-        return <Projects />;
+        return <ProjectsGrid />;
       case 'blog':
         return <Blog />;
       case 'contact':
