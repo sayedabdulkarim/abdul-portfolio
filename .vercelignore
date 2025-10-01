@@ -1,0 +1,34 @@
+# Backend and training folders
+backend/
+training/
+working_app_py/
+replicate_deployment/
+
+# Python files
+*.py
+*.pyc
+__pycache__/
+
+# Test files
+test_*
+
+# Documentation
+*.md
+!README.md
+
+# Shell scripts
+*.sh
+
+# Model files
+*.gguf
+*.bin
+*.safetensors
+Modelfile
+
+# Environment files (Vercel will use its own)
+.env.local
+.env.development
+
+# Misc
+.DS_Store
+*.log
