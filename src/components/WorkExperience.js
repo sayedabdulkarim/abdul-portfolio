@@ -1,78 +1,139 @@
-import React from 'react';
-import './WorkExperience.scss';
+import React from "react";
+import "./WorkExperience.scss";
 
 const WorkExperience = () => {
   const experiences = [
     {
       id: 1,
-      logo: 'https://publicisgroupe.sharepoint.com/sites/GlobalHolidayCalendar/_api/siteiconmanager/getsitelogo?type=%271%27&hash=637709206690036111',
-      title: 'Senior Experience Engineer',
-      company: 'Publicis Sapient',
-      period: '2023 Dec - Present',
+      logo: "https://careers.publicissapient.com/content/dam/ps-rebrand/brand/ps-logo-NEW.svg",
+      title: "Senior Experience Engineer",
+      company: "Publicis Sapient",
+      period: "2023 Dec - Present",
       description: [
-        'Patient Portal - For Optum patients (HealthCare Partners/AppleCare Medical Group)',
-        'Company Timesheet App - Desktop portal to consolidate timesheet submissions across platforms'
+        "Patient Portal - For Optum patients (HealthCare Partners/AppleCare Medical Group)",
+        "Company Timesheet App - Desktop portal to consolidate timesheet submissions across platforms",
       ],
-      technologies: ['React Native', 'TypeScript', 'Firebase', 'Abyss CSS', 'Jest', 'Electron', 'Node.js', 'Express', 'XLSX', 'PapaParse', 'CSV-Parser', 'Nodemailer'],
+      technologies: [
+        "React Native",
+        "TypeScript",
+        "Firebase",
+        "Abyss CSS",
+        "Jest",
+        "Electron",
+        "Node.js",
+        "Express",
+        "XLSX",
+        "PapaParse",
+        "CSV-Parser",
+        "Nodemailer",
+      ],
       projects: [
-        { name: 'Patient Portal Android', url: '#' },
-        { name: 'Patient Portal iOS', url: '#' },
-        { name: 'Patient Portal Web', url: '#' }
-      ]
+        { name: "Patient Portal Android", url: "#" },
+        { name: "Patient Portal iOS", url: "#" },
+        { name: "Patient Portal Web", url: "#" },
+      ],
     },
     {
       id: 2,
-      logo: 'https://cdn-iggbnmj.nitrocdn.com/IOuwzrymxSPtcVcIdYOcPVHHtftxrxAA/assets/images/optimized/rev-' +
-        'd51bb41/tavant.com/wp-content/uploads/2025/02/Tavant-Logo-original.png',
-      title: 'Software Engineer',
-      company: 'Tavant Technologies',
-      period: '2021 Dec - 2023 Oct',
+      logo:
+        "https://cdn-iggbnmj.nitrocdn.com/IOuwzrymxSPtcVcIdYOcPVHHtftxrxAA/assets/images/optimized/rev-" +
+        "d51bb41/tavant.com/wp-content/uploads/2025/02/Tavant-Logo-original.png",
+      title: "Software Engineer",
+      company: "Tavant Technologies",
+      period: "2021 Dec - 2023 Oct",
       description: [
-        'Scalable Legal - Legal management platform with ReactJS, Redux(toolkit), API integration',
-        'winfieldUnited - Agricultural platform with jQuery, JavaScript, Foundation Framework, Bootstrap'
+        "Scalable Legal - Legal management platform with ReactJS, Redux(toolkit), API integration",
+        "winfieldUnited - Agricultural platform with jQuery, JavaScript, Foundation Framework, Bootstrap",
       ],
-      technologies: ['React', 'Redux Toolkit', 'Material UI', 'Router', 'TypeScript', 'Node.js', 'Express', 'MongoDB', 'Firebase', 'Zendesk', 'jQuery', 'Bootstrap', 'Kentico', 'GIT', 'Twilio Chat', 'Google Map API'],
+      technologies: [
+        "React",
+        "Redux Toolkit",
+        "Material UI",
+        "Router",
+        "TypeScript",
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "Firebase",
+        "Zendesk",
+        "jQuery",
+        "Bootstrap",
+        "Kentico",
+        "GIT",
+        "Twilio Chat",
+        "Google Map API",
+      ],
       projects: [
-        { name: 'Scalable Legal', url: 'URL' },
-        { name: 'winfieldUnited - WUC', url: 'WUC' },
-        { name: 'winfieldUnited - WUCA', url: 'WUCA' },
-        { name: 'winfieldUnited - PORTAL', url: 'PORTAL' },
-        { name: 'winfieldUnited - CROPLAN', url: 'CROPLAN' },
-        { name: 'winfieldUnited - TOOLSTAGE', url: 'TOOLSTAGE' }
-      ]
+        { name: "Scalable Legal", url: "URL" },
+        { name: "winfieldUnited - WUC", url: "WUC" },
+        { name: "winfieldUnited - WUCA", url: "WUCA" },
+        { name: "winfieldUnited - PORTAL", url: "PORTAL" },
+        { name: "winfieldUnited - CROPLAN", url: "CROPLAN" },
+        { name: "winfieldUnited - TOOLSTAGE", url: "TOOLSTAGE" },
+      ],
     },
     {
       id: 3,
-      logo: 'https://www.capitalnumbers.com/images/logo.svg',
-      title: 'Software Engineer',
-      company: 'Capital Numbers',
-      period: '2021 Mar - 2021 Dec',
+      logo: "https://www.capitalnumbers.com/images/logo.svg",
+      title: "Software Engineer",
+      company: "Capital Numbers",
+      period: "2021 Mar - 2021 Dec",
       description: [
-        'DewSquad (UserEnd) - E-commerce platform with Redux Toolkit, API integration, Unit Testing',
-        'DewSquad (Admin) - Admin panel with Material UI, NextJS, Router, Redux(thunk), API integration'
+        "DewSquad (UserEnd) - E-commerce platform with Redux Toolkit, API integration, Unit Testing",
+        "DewSquad (Admin) - Admin panel with Material UI, NextJS, Router, Redux(thunk), API integration",
       ],
-      technologies: ['React', 'Redux', 'Redux Toolkit', 'Redux Thunk', 'Material UI', 'NextJS', 'Router', 'TypeScript', 'Node.js', 'Express', 'MongoDB', 'BIT Bucket'],
+      technologies: [
+        "React",
+        "Redux",
+        "Redux Toolkit",
+        "Redux Thunk",
+        "Material UI",
+        "NextJS",
+        "Router",
+        "TypeScript",
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "BIT Bucket",
+      ],
       projects: [
-        { name: 'DewSquad UserEnd', url: 'URL' },
-        { name: 'DewSquad Admin', url: 'URL' }
-      ]
+        { name: "DewSquad UserEnd", url: "URL" },
+        { name: "DewSquad Admin", url: "URL" },
+      ],
     },
     {
       id: 4,
-      logo: 'https://www.vibrant-info.com/wp-content/themes/vibrant/images/logo.svg',
-      title: 'React Engineer',
-      company: 'Vibrant Info',
-      period: '2020 March - 2021 March',
+      logo: "https://www.vibrant-info.com/wp-content/themes/vibrant/images/logo.svg",
+      title: "React Engineer",
+      company: "Vibrant Info",
+      period: "2020 March - 2021 March",
       description: [
-        'Nodwin Vendor Portal - Vendor management system with ReactSSR, ContextAPI, Redux integration',
-        'Alwar Soft - Educational platform with Material UI, ReactJS, Router, Redux(saga) integration'
+        "Nodwin Vendor Portal - Vendor management system with ReactSSR, ContextAPI, Redux integration",
+        "Alwar Soft - Educational platform with Material UI, ReactJS, Router, Redux(saga) integration",
       ],
-      technologies: ['React', 'ReactSSR', 'Redux', 'Redux Saga', 'Material UI', 'ContextAPI', 'Bootstrap', 'Node.js', 'Express', 'MongoDB', 'Firebase', 'Zendesk', 'S3 Bucket', 'Cloudinary', 'BIT Bucket', 'TypeScript'],
+      technologies: [
+        "React",
+        "ReactSSR",
+        "Redux",
+        "Redux Saga",
+        "Material UI",
+        "ContextAPI",
+        "Bootstrap",
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "Firebase",
+        "Zendesk",
+        "S3 Bucket",
+        "Cloudinary",
+        "BIT Bucket",
+        "TypeScript",
+      ],
       projects: [
-        { name: 'Nodwin Vendor Portal', url: 'URL' },
-        { name: 'Alwar Soft', url: 'URL' }
-      ]
-    }
+        { name: "Nodwin Vendor Portal", url: "URL" },
+        { name: "Alwar Soft", url: "URL" },
+      ],
+    },
   ];
 
   return (
@@ -82,7 +143,11 @@ const WorkExperience = () => {
           <div key={exp.id} className="experience-card">
             <div className="card-header">
               <div className="company-info">
-                <img src={exp.logo} alt={exp.company} className={`company-logo ${exp.id === 4 ? 'white-bg' : ''}`} />
+                <img
+                  src={exp.logo}
+                  alt={exp.company}
+                  className={`company-logo ${exp.id === 1 || exp.id === 4 ? "white-bg" : ""}`}
+                />
                 <div className="company-details">
                   <h3 className="job-title">
                     {exp.title}
@@ -93,23 +158,25 @@ const WorkExperience = () => {
               </div>
               <span className="period">{exp.period}</span>
             </div>
-            
+
             <div className="card-body">
               <ul className="description-list">
                 {exp.description.map((item, index) => (
                   <li key={index}>{item}</li>
                 ))}
               </ul>
-              
+
               {exp.projects && exp.projects.length > 0 && (
                 <div className="projects">
                   <h4 className="projects-title">Projects:</h4>
                   <div className="projects-list">
                     {exp.projects.map((project, index) => (
-                      <a 
-                        key={index} 
-                        href={project.url.startsWith('http') ? project.url : '#'} 
-                        target="_blank" 
+                      <a
+                        key={index}
+                        href={
+                          project.url.startsWith("http") ? project.url : "#"
+                        }
+                        target="_blank"
                         rel="noopener noreferrer"
                         className="project-link"
                       >
@@ -119,10 +186,12 @@ const WorkExperience = () => {
                   </div>
                 </div>
               )}
-              
+
               <div className="technologies">
                 {exp.technologies.map((tech, index) => (
-                  <span key={index} className="tech-badge">{tech}</span>
+                  <span key={index} className="tech-badge">
+                    {tech}
+                  </span>
                 ))}
               </div>
             </div>
