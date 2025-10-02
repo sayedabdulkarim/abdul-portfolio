@@ -28,9 +28,15 @@ const WorkExperience = () => {
         "Nodemailer",
       ],
       projects: [
-        { name: "Patient Portal Android", url: "#" },
-        { name: "Patient Portal iOS", url: "#" },
-        { name: "Patient Portal Web", url: "#" },
+        {
+          name: "Patient Portal Android",
+          url: "https://play.google.com/store/apps/details?id=com.optum.mobile.optum&hl=en_IN",
+        },
+        {
+          name: "Patient Portal iOS",
+          url: "https://apps.apple.com/us/app/optum/id6504930082",
+        },
+        { name: "Patient Portal Web", url: "https://patient.optum.com/" },
       ],
     },
     {
@@ -64,12 +70,24 @@ const WorkExperience = () => {
         "Google Map API",
       ],
       projects: [
-        { name: "Scalable Legal", url: "URL" },
-        { name: "winfieldUnited - WUC", url: "WUC" },
-        { name: "winfieldUnited - WUCA", url: "WUCA" },
-        { name: "winfieldUnited - PORTAL", url: "PORTAL" },
-        { name: "winfieldUnited - CROPLAN", url: "CROPLAN" },
-        { name: "winfieldUnited - TOOLSTAGE", url: "TOOLSTAGE" },
+        { name: "Scalable Legal", url: "http://dev.settlementapp99.com/" },
+        {
+          name: "winfieldUnited - WUC",
+          url: "https://www.winfieldunited.com/",
+        },
+        {
+          name: "winfieldUnited - WUCA",
+          url: "https://www.winfieldunited.ca/",
+        },
+        {
+          name: "winfieldUnited - PORTAL",
+          url: "http://portaldev.winfieldunited.com/",
+        },
+        { name: "winfieldUnited - CROPLAN", url: "https://www.croplan.com/" },
+        {
+          name: "winfieldUnited - TOOLSTAGE",
+          url: "https://www.toolsstage.winfieldunited.com/",
+        },
       ],
     },
     {
@@ -97,8 +115,7 @@ const WorkExperience = () => {
         "BIT Bucket",
       ],
       projects: [
-        { name: "DewSquad UserEnd", url: "URL" },
-        { name: "DewSquad Admin", url: "URL" },
+        { name: "DewSquad UserEnd", url: "https://www.dewchallenge.com/en" },
       ],
     },
     {
@@ -129,10 +146,7 @@ const WorkExperience = () => {
         "BIT Bucket",
         "TypeScript",
       ],
-      projects: [
-        { name: "Nodwin Vendor Portal", url: "URL" },
-        { name: "Alwar Soft", url: "URL" },
-      ],
+      projects: [{ name: "Nodwin Vendor Portal", url: "https://www.nodw.in/" }],
     },
   ];
 
@@ -146,7 +160,9 @@ const WorkExperience = () => {
                 <img
                   src={exp.logo}
                   alt={exp.company}
-                  className={`company-logo ${exp.id === 1 || exp.id === 4 ? "white-bg" : ""}`}
+                  className={`company-logo ${
+                    exp.id === 1 || exp.id === 4 ? "white-bg" : ""
+                  }`}
                 />
                 <div className="company-details">
                   <h3 className="job-title">

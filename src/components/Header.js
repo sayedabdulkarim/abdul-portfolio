@@ -102,8 +102,8 @@ const Header = () => {
               <FontAwesomeIcon icon={faMedium} />
             </a>
             <a
-              href={`${process.env.PUBLIC_URL}/assets/resume@abdul_psn.pdf`}
-              download
+              href="/assets/resume@abdul_ps.pdf"
+              download="Sayed_Abdul_Karim_Resume.pdf"
               className="social-icon"
               title="Download Resume"
             >
