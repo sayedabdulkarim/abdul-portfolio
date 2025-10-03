@@ -111,6 +111,32 @@ const ProjectsGrid = () => {
     },
     {
       id: 5,
+      name: "QuickTick VSCode Extension",
+      icon: "✅",
+      description:
+        "Project-specific todo management extension for VS Code with persistent storage",
+      problem:
+        "Developers need an integrated, project-specific way to manage tasks without leaving their coding environment",
+      solution:
+        "Built a VS Code extension with project-specific todo lists, persistent storage across restarts, visual progress tracking, smart filters (All/Active/Completed), inline editing, and always-visible status bar integration",
+      technologies: [
+        "TypeScript",
+        "VSCode Extension API",
+        "WebView API",
+        "VSCode Commands API",
+        "VSCode StatusBar API",
+        "HTML/CSS",
+        "JavaScript",
+      ],
+      status: "completed",
+      githubUrl: "https://github.com/sayedabdulkarim/QuickTick",
+      liveUrl:
+        "https://marketplace.visualstudio.com/items?itemName=sayedabdulkarim.quicktick",
+      stars: 24,
+      downloads: "500+",
+    },
+    {
+      id: 6,
       name: "Kanbanix",
       icon: "📋",
       description:
