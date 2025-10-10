@@ -328,12 +328,14 @@ header {
 
 .home__container {
   gap: 1rem;
+  padding-top: 10rem; // Account for fixed header and tabs with spacing
 }
 
 .home__content {
-  grid-template-columns: 0.5fr 3fr;
+  grid-template-columns: 1fr 1fr;
   padding-top: 3.5rem;
   align-items: center;
+  justify-items: center;
 }
 
 .home__social {
@@ -954,7 +956,7 @@ header {
     column-gap: 0;
   }
   .home__content {
-    grid-template-columns: 0.25fr 3fr;
+    grid-template-columns: 1fr;
   }
   .home__blob {
     width: 180px;
@@ -990,10 +992,11 @@ header {
     font-size: 14vh;
   }
   .home__content {
-    grid-template-columns: max-content 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
   .home__data {
     grid-column: initial;
+    justify-self: start;
   }
   .home__img {
     order: 1;

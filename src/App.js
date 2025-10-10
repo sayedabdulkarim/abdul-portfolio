@@ -4,6 +4,7 @@ import { Outlet, useNavigate } from "react-router-dom";
 import { Container } from "react-bootstrap";
 import { ToastContainer } from "react-toastify";
 import { useDispatch, useSelector } from "react-redux";
+import ChatBot from "./components/Chat/ChatBot";
 // import "react-toastify/dist/ReactToastify.css";
 
 const App = () => {
@@ -19,9 +20,10 @@ const App = () => {
     <>
       <ToastContainer />
       <Header />
-      <Container className="my-2">
+      <div className="my-2">
         <Outlet />
-      </Container>
+      </div>
+      {/* <ChatBot /> */}
     </>
   );
 };
