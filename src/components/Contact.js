@@ -34,7 +34,7 @@ const Contact = () => {
             </a>
 
             <a
-              href="/assets/resume@abdul.pdf"
+              href="./assets/resume@abdul.pdf"
               download="Sayed_Abdul_Karim_Resume.pdf"
               className="btn-secondary"
             >
