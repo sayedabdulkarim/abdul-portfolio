@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkmoris_assignment=self.webpackChunkmoris_assignment||[]).push([[294],{294:function(n,s,e){e.r(s),e.d(s,{default:function(){return t}});var t={}}}]);
+//# sourceMappingURL=294.a6db6a6d.chunk.js.map
