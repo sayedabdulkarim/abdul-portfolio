@@ -41,9 +41,7 @@ const WorkExperience = () => {
     // },
     {
       id: 2,
-      logo:
-        "https://cdn-iggbnmj.nitrocdn.com/IOuwzrymxSPtcVcIdYOcPVHHtftxrxAA/assets/images/optimized/rev-" +
-        "d51bb41/tavant.com/wp-content/uploads/2025/02/Tavant-Logo-original.png",
+      logo: "https://cdn-iggbnmj.nitrocdn.com/IOuwzrymxSPtcVcIdYOcPVHHtftxrxAA/assets/images/optimized/rev-4ed415b/tavant.com/wp-content/uploads/2025/02/Tavant-Logo-original.png",
       title: "Software Engineer",
       company: "Tavant Technologies",
       period: "2021 Dec - 2023 Oct",

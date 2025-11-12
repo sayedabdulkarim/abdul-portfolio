@@ -1,7 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import "./ProjectsGrid.scss";
+import VideoThumbnail from "./VideoThumbnail";
+import VideoModal from "./VideoModal";
 
 const ProjectsGrid = () => {
+  const [selectedVideo, setSelectedVideo] = useState(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleVideoClick = (video) => {
+    setSelectedVideo(video);
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+    setSelectedVideo(null);
+  };
+
   const projects = [
     {
       id: 1,
@@ -108,6 +123,18 @@ const ProjectsGrid = () => {
       liveUrl: "https://nocode01-production-f989.up.railway.app/",
       stars: 132,
       downloads: "5k+",
+      videos: [
+        {
+          name: "code generation, preview, editor, live edit",
+          url: "https://pub-9f02256669ee4e9f9c3480046925bb40.r2.dev/code_creation.mov",
+          image: "default",
+        },
+        {
+          name: "work on multi project simultaneously",
+          url: "https://pub-9f02256669ee4e9f9c3480046925bb40.r2.dev/work_on_multi_project_simultaneously.mov",
+          image: "default",
+        },
+      ],
     },
     {
       id: 5,
@@ -159,6 +186,23 @@ const ProjectsGrid = () => {
       githubUrl: "#",
       stars: 0,
       downloads: "Coming Soon",
+      videos: [
+        {
+          name: "new project code generation",
+          url: "https://pub-9f02256669ee4e9f9c3480046925bb40.r2.dev/merged.mp4",
+          image: "default",
+        },
+        {
+          name: "existing project code generation",
+          url: "https://pub-9f02256669ee4e9f9c3480046925bb40.r2.dev/existing_project_code_generation.mov",
+          image: "default",
+        },
+        {
+          name: "code commit & pr raise",
+          url: "https://pub-9f02256669ee4e9f9c3480046925bb40.r2.dev/code_commit_pr_raise.mov",
+          image: "default",
+        },
+      ],
     },
   ];
 
@@ -211,6 +255,21 @@ const ProjectsGrid = () => {
                     </span>
                   ))}
                 </div>
+
+                {project.videos && project.videos.length > 0 && (
+                  <div className="project-videos">
+                    <span className="demo-label">DEMO :</span>
+                    <div className="video-thumbnails-container">
+                      {project.videos.map((video, index) => (
+                        <VideoThumbnail
+                          key={index}
+                          video={video}
+                          onClick={() => handleVideoClick(video)}
+                        />
+                      ))}
+                    </div>
+                  </div>
+                )}
 
                 <div className="project-actions">
                   {project.status !== "upcoming" ? (
@@ -269,6 +328,12 @@ const ProjectsGrid = () => {
           })}
         </div>
       </div>
+
+      <VideoModal
+        video={selectedVideo}
+        isOpen={isModalOpen}
+        onClose={handleCloseModal}
+      />
     </div>
   );
 };
