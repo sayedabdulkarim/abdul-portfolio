@@ -46,8 +46,8 @@ export const sendMessageToBot = async (message, conversationHistory = []) => {
     
     // The result should contain the updated history
     if (result && result.data) {
-      const [_, updatedHistory] = result.data;
-      
+      const updatedHistory = result.data[1];
+
       if (updatedHistory && updatedHistory.length > 0) {
         const lastExchange = updatedHistory[updatedHistory.length - 1];
         const botResponse = lastExchange[1];

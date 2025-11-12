@@ -1,23 +1,14 @@
 import React, { useRef, useState } from "react";
 import WorkExperience from "../../components/WorkExperience";
-import Projects from "../../components/Projects";
 import ProjectsGrid from "../../components/ProjectsGrid";
 import NavigationTabs from "../../components/NavigationTabs";
 import Blog from "../../components/Blog";
 import Contact from "../../components/Contact";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons"; // Import LinkedIn icon from brands package
-import { faArrowRightLong } from "@fortawesome/free-solid-svg-icons";
 
 const Home = () => {
   //misc
   const endOfPageRef = useRef(null);
   const [activeTab, setActiveTab] = useState('about');
-
-  //func
-  const scrollToBottom = () => {
-    endOfPageRef.current.scrollIntoView({ behavior: "smooth" });
-  };
 
   const handleTabChange = (tabId) => {
     setActiveTab(tabId);

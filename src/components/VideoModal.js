@@ -1,5 +1,4 @@
 import React, { useEffect, useRef } from "react";
-import ReactPlayer from "react-player";
 import "./VideoModal.scss";
 
 const VideoModal = ({ video, isOpen, onClose }) => {

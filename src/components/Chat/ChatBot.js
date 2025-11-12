@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState } from 'react';
 import ChatModal from './ChatModal';
 import { sendMessageToBot } from '../../utils/chatAPI';
 import './ChatBot.scss';
