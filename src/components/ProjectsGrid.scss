@@ -216,6 +216,29 @@
       }
     }
 
+    .project-videos {
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+
+      .demo-label {
+        font-size: 0.75rem;
+        font-weight: 600;
+        color: var(--text-color);
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        opacity: 0.8;
+      }
+
+      .video-thumbnails-container {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        flex-wrap: wrap;
+      }
+    }
+
     .project-actions {
       display: flex;
       gap: 0.6rem;

@@ -42,3 +42,6 @@ backend/app/services/__pycache__/
 # Backend test files
 backend/test_*.py
 test_*.py
+
+# Video files - hosted on Cloudflare R2
+public/videos/
