@@ -204,6 +204,37 @@ const ProjectsGrid = () => {
         },
       ],
     },
+    {
+      id: 7,
+      name: "DevLens",
+      icon: "🔍",
+      description:
+        "Debug any mobile app - logs, network, storage. No SDK required. Just run: npx devlens",
+      problem:
+        "To see logs from physical Android/iOS devices, developers need to open heavy IDEs like Android Studio (2-3GB) or Xcode (15+GB) just for viewing logs",
+      solution:
+        "Built a CLI tool that connects to physical devices via USB and streams real-time logs, captures network traffic, and reads app storage - all in a browser dashboard. No IDE needed, works with any installed app",
+      technologies: [
+        "Node.js",
+        "TypeScript",
+        "Express",
+        "Socket.io",
+        "ADB",
+        "libimobiledevice",
+      ],
+      status: "completed",
+      githubUrl: "https://github.com/sayedabdulkarim/devlens",
+      liveUrl: "https://www.npmjs.com/package/devlens",
+      stars: 0,
+      downloads: "npm",
+      videos: [
+        {
+          name: "DevLens Demo - Debug mobile apps without IDE",
+          url: "https://pub-9f02256669ee4e9f9c3480046925bb40.r2.dev/devLens.mov",
+          image: "default",
+        },
+      ],
+    },
   ];
 
   const getStatusBadge = (status) => {
