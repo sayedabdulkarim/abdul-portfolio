@@ -1,0 +1,74 @@
+{
+  "nav": {
+    "projects": "المشاريع",
+    "apps": "التطبيقات",
+    "blog": "المدونة",
+    "about": "حول"
+  },
+  "home": {
+    "name": "سيد عبد الكريم",
+    "intro": "مرحباً، أنا <highlight>مطور برمجيات</highlight> أحب بناء الأشياء واستكشاف كل تقنية.",
+    "playBreakout": "العب بريك آوت",
+    "youWin": "فزت!",
+    "gameOver": "انتهت اللعبة!",
+    "score": "النتيجة",
+    "playAgain": "العب مرة أخرى",
+    "closeGame": "إغلاق اللعبة"
+  },
+  "about": {
+    "greeting": "مرحباً",
+    "name": "أنا سيد عبد الكريم",
+    "intro1": "مهندس بالنهار، مستكشف بالليل! مبرمج يتقن الغوص في أعماق التكنولوجيا.",
+    "intro2": "لست مقيداً بمجال واحد—مهمتي هي إتقانها جميعاً",
+    "intro3": "حالياً أبحر في مياه <strong>الذكاء الاصطناعي وتعلم الآلة</strong> المجهولة، وأستمتع بكل لحظة من المغامرة!",
+    "learning": "أتعلم حالياً",
+    "learningSkills": "الذكاء الاصطناعي، تعلم الآلة، التعلم العميق، معالجة اللغة الطبيعية، الرؤية الحاسوبية",
+    "reachMe": "للتواصل معي",
+    "funFact": "حقيقة ممتعة: أنا المنافس الهادئ الذي يسعى دائماً نحو هدف لا يراه أحد غيره.",
+    "connectWithMe": "تواصل معي:"
+  },
+  "projects": {
+    "title": "مشاريع مفتوحة المصدر",
+    "subtitle": "كتابة الكود، إطلاق المشاريع، و<highlight>أحياناً النوم</highlight>",
+    "categories": {
+      "webTools": "أدوات الويب",
+      "reactComponents": "مكونات ريأكت",
+      "reactNativeComponents": "مكونات ريأكت نيتيف",
+      "nodejsProjects": "مشاريع نود جي إس",
+      "jsLibraries": "مكتبات جافاسكريبت",
+      "cliTools": "أدوات سطر الأوامر",
+      "fullStackProjects": "مشاريع متكاملة",
+      "aimlProjects": "مشاريع الذكاء الاصطناعي",
+      "mobileApps": "تطبيقات الجوال",
+      "browserExtensions": "إضافات المتصفح",
+      "fullStackApps": "تطبيقات متكاملة",
+      "vscodeExtensions": "إضافات VSCode",
+      "aiProjects": "مشاريع الذكاء الاصطناعي",
+      "developerTools": "أدوات المطورين",
+      "librariesPackages": "المكتبات والحزم"
+    },
+    "demo": "عرض"
+  },
+  "apps": {
+    "workInProgress": "قيد التطوير",
+    "wipSubtitle": "نحفر عميقاً لبناء شيء رائع!",
+    "wipHighlight": "في هذه الأثناء، ساعدنا في الحفر عن الكنوز أدناه!",
+    "digs": "الحفريات",
+    "score": "النتيجة",
+    "rareFinds": "اكتشافات نادرة",
+    "clickToDig": "انقر للحفر!",
+    "recentDiscoveries": "اكتشافات حديثة",
+    "comingSoon": "قريباً..."
+  },
+  "blog": {
+    "title": "المدونة",
+    "subtitle": "أفكار ودروس ورؤى حول تطوير الويب.",
+    "technicalArticles": "مقالات تقنية",
+    "articlesSubtitle": "أفكار وتعمقات ودروس مستفادة على طول الطريق",
+    "readOnMedium": "اقرأ على Medium ←",
+    "viewAllArticles": "عرض جميع المقالات على Medium ←"
+  },
+  "common": {
+    "loading": "جاري التحميل..."
+  }
+}

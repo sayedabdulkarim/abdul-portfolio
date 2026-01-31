@@ -1,0 +1,362 @@
+.apps-page.wip-page {
+  min-height: 100vh;
+  background-color: var(--body-color);
+  padding: 60px 0;
+
+  .wip-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  // Header
+  .wip-header {
+    text-align: center;
+    margin-bottom: 40px;
+
+    .wip-icon {
+      font-size: 3rem;
+      margin-bottom: 16px;
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+
+      .construction-emoji {
+        animation: bounce 1s ease-in-out infinite;
+      }
+
+      .tools-emoji {
+        animation: swing 1s ease-in-out infinite;
+      }
+    }
+
+    .wip-title {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var(--title-color);
+      margin-bottom: 16px;
+      letter-spacing: -0.02em;
+
+      @media screen and (max-width: 768px) {
+        font-size: 2rem;
+      }
+    }
+
+    .wip-subtitle {
+      font-size: 1.125rem;
+      color: var(--text-color);
+      line-height: 1.8;
+
+      .highlight {
+        color: #fbbf24;
+        font-weight: 500;
+      }
+    }
+  }
+
+  // Stats
+  .wip-stats {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 32px;
+    flex-wrap: wrap;
+
+    .stat-box {
+      background: var(--container-color);
+      border: 1px solid var(--text-color-light);
+      border-radius: 12px;
+      padding: 16px 24px;
+      text-align: center;
+      min-width: 100px;
+      transition: transform 0.2s ease, border-color 0.2s ease;
+
+      &:hover {
+        transform: translateY(-2px);
+        border-color: var(--first-color);
+      }
+
+      .stat-icon {
+        font-size: 1.5rem;
+        display: block;
+        margin-bottom: 4px;
+      }
+
+      .stat-value {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--title-color);
+        display: block;
+      }
+
+      .stat-label {
+        font-size: 0.75rem;
+        color: var(--text-color);
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+      }
+    }
+  }
+
+  // Digging Area
+  .dig-area {
+    cursor: pointer;
+    margin-bottom: 32px;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: transform 0.1s ease;
+    user-select: none;
+
+    &:active,
+    &.digging {
+      transform: scale(0.98);
+
+      .pickaxe {
+        transform: rotate(-30deg);
+      }
+    }
+
+    .dig-surface {
+      position: relative;
+    }
+
+    .grass-layer {
+      height: 20px;
+      background: linear-gradient(180deg, #22c55e 0%, #16a34a 100%);
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 8px;
+        background: repeating-linear-gradient(
+          90deg,
+          transparent,
+          transparent 10px,
+          rgba(0, 0, 0, 0.1) 10px,
+          rgba(0, 0, 0, 0.1) 20px
+        );
+      }
+    }
+
+    .dirt-layer {
+      background: linear-gradient(180deg, #92400e 0%, #78350f 50%, #451a03 100%);
+      min-height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+
+      // Dirt texture
+      &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-image: radial-gradient(circle, rgba(0,0,0,0.1) 1px, transparent 1px);
+        background-size: 20px 20px;
+        pointer-events: none;
+      }
+
+      // Rock layers
+      &::after {
+        content: "🪨 🪨 🪨 🪨 🪨";
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 1.5rem;
+        opacity: 0.3;
+        letter-spacing: 20px;
+      }
+    }
+
+    .dig-prompt {
+      text-align: center;
+      z-index: 1;
+
+      .pickaxe {
+        font-size: 4rem;
+        display: block;
+        margin-bottom: 8px;
+        transition: transform 0.15s ease;
+        filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
+      }
+
+      p {
+        color: #fef3c7;
+        font-size: 1.125rem;
+        font-weight: 500;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+      }
+    }
+
+    .dirt-particle {
+      position: fixed;
+      font-size: 1.25rem;
+      animation: particle-fly 0.5s ease-out forwards;
+      pointer-events: none;
+      z-index: 100;
+    }
+
+    .found-treasure {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      animation: treasure-pop 0.5s ease-out;
+      text-align: center;
+      z-index: 10;
+
+      .treasure-emoji {
+        font-size: 4rem;
+        display: block;
+        filter: drop-shadow(0 0 20px rgba(255, 215, 0, 0.8));
+        animation: treasure-bounce 0.5s ease-out;
+      }
+
+      .treasure-name {
+        color: #fbbf24;
+        font-size: 1.25rem;
+        font-weight: 700;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+        display: block;
+        margin-top: 8px;
+      }
+    }
+  }
+
+  // Found Items
+  .found-items {
+    background: var(--container-color);
+    border: 1px solid var(--text-color-light);
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 32px;
+
+    h3 {
+      color: var(--title-color);
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 16px;
+      text-align: center;
+    }
+
+    .items-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      justify-content: center;
+
+      .found-item {
+        font-size: 1.75rem;
+        background: var(--body-color);
+        border-radius: 8px;
+        width: 48px;
+        height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: transform 0.2s ease;
+        cursor: default;
+
+        &:hover {
+          transform: scale(1.2);
+        }
+
+        &:first-child {
+          animation: new-item 0.3s ease-out;
+        }
+      }
+    }
+  }
+
+  // Coming Soon
+  .coming-soon {
+    text-align: center;
+    padding: 40px 0;
+
+    p {
+      color: var(--text-color);
+      font-size: 1rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      opacity: 0.6;
+    }
+  }
+}
+
+// Animations
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes swing {
+  0%, 100% {
+    transform: rotate(-15deg);
+  }
+  50% {
+    transform: rotate(15deg);
+  }
+}
+
+@keyframes particle-fly {
+  0% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -100px) scale(0.5);
+  }
+}
+
+@keyframes treasure-pop {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0);
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.3);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+@keyframes treasure-bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes new-item {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

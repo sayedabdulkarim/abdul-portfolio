@@ -1,0 +1,74 @@
+{
+  "nav": {
+    "projects": "Projets",
+    "apps": "Applications",
+    "blog": "Blog",
+    "about": "À propos"
+  },
+  "home": {
+    "name": "Sayed Abdul Karim",
+    "intro": "Salut, je suis un <highlight>développeur logiciel</highlight> qui aime créer des choses et explorer toutes les technologies.",
+    "playBreakout": "Jouer à Breakout",
+    "youWin": "Vous avez gagné !",
+    "gameOver": "Partie terminée !",
+    "score": "Score",
+    "playAgain": "Rejouer",
+    "closeGame": "Fermer le jeu"
+  },
+  "about": {
+    "greeting": "Salut",
+    "name": "Je suis Sayed Abdul Karim",
+    "intro1": "Ingénieur le jour, explorateur la nuit ! Un dompteur de code avec un talent pour plonger dans les profondeurs de la technologie.",
+    "intro2": "Pas attaché à un seul domaine—ma mission est de tous les conquérir",
+    "intro3": "Actuellement en train de naviguer dans les eaux inconnues de l'<strong>IA/ML</strong>, et j'adore chaque moment de cette aventure !",
+    "learning": "J'apprends actuellement",
+    "learningSkills": "IA, ML, DL, NLP, Vision par ordinateur",
+    "reachMe": "Comment me contacter",
+    "funFact": "Fait amusant : Je suis l'outsider discret qui vise toujours la cible que personne d'autre ne voit.",
+    "connectWithMe": "Connectez-vous avec moi :"
+  },
+  "projects": {
+    "title": "Projets Open Source",
+    "subtitle": "Écrire du code, livrer des projets, et <highlight>parfois dormir</highlight>",
+    "categories": {
+      "webTools": "Outils Web",
+      "reactComponents": "Composants React",
+      "reactNativeComponents": "Composants React Native",
+      "nodejsProjects": "Projets Node.js",
+      "jsLibraries": "Bibliothèques JavaScript",
+      "cliTools": "Outils CLI",
+      "fullStackProjects": "Projets Full Stack",
+      "aimlProjects": "Projets IA/ML",
+      "mobileApps": "Applications Mobiles",
+      "browserExtensions": "Extensions de Navigateur",
+      "fullStackApps": "Applications Full Stack",
+      "vscodeExtensions": "Extensions VSCode",
+      "aiProjects": "Projets IA",
+      "developerTools": "Outils de Développement",
+      "librariesPackages": "Bibliothèques et Packages"
+    },
+    "demo": "Démo"
+  },
+  "apps": {
+    "workInProgress": "Travaux en cours",
+    "wipSubtitle": "Nous creusons en profondeur pour construire quelque chose d'incroyable !",
+    "wipHighlight": "En attendant, aidez-nous à creuser pour des trésors ci-dessous !",
+    "digs": "Fouilles",
+    "score": "Score",
+    "rareFinds": "Trouvailles rares",
+    "clickToDig": "Cliquez pour creuser !",
+    "recentDiscoveries": "Découvertes récentes",
+    "comingSoon": "Bientôt disponible..."
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Réflexions, tutoriels et perspectives sur le développement web.",
+    "technicalArticles": "Articles Techniques",
+    "articlesSubtitle": "Réflexions, analyses approfondies et leçons apprises en cours de route",
+    "readOnMedium": "Lire sur Medium →",
+    "viewAllArticles": "Voir tous les articles sur Medium →"
+  },
+  "common": {
+    "loading": "Chargement..."
+  }
+}

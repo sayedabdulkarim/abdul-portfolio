@@ -1,0 +1,74 @@
+{
+  "nav": {
+    "projects": "प्रोजेक्ट्स",
+    "apps": "ऐप्स",
+    "blog": "ब्लॉग",
+    "about": "परिचय"
+  },
+  "home": {
+    "name": "सैयद अब्दुल करीम",
+    "intro": "नमस्ते, मैं एक <highlight>सॉफ्टवेयर डेवलपर</highlight> हूं जो चीजें बनाना और हर टेक स्टैक में एक्सप्लोर करना पसंद करता है।",
+    "playBreakout": "ब्रेकआउट खेलें",
+    "youWin": "आप जीते!",
+    "gameOver": "गेम ओवर!",
+    "score": "स्कोर",
+    "playAgain": "फिर से खेलें",
+    "closeGame": "गेम बंद करें"
+  },
+  "about": {
+    "greeting": "नमस्ते",
+    "name": "मैं सैयद अब्दुल करीम हूं",
+    "intro1": "दिन में इंजीनियर, रात में एक्सप्लोरर! एक कोड रैंगलर जो टेक्नोलॉजी की गहराई में गोता लगाने में माहिर है।",
+    "intro2": "किसी एक डोमेन तक सीमित नहीं—मेरा मिशन सभी को जीतना है",
+    "intro3": "वर्तमान में <strong>AI/ML</strong> के अज्ञात पानियों में नेविगेट कर रहा हूं, और इस एडवेंचर के हर पल का आनंद ले रहा हूं!",
+    "learning": "मैं वर्तमान में सीख रहा हूं",
+    "learningSkills": "AI, ML, DL, NLP, कंप्यूटर विजन",
+    "reachMe": "मुझसे संपर्क करें",
+    "funFact": "मजेदार तथ्य: मैं वो शांत अंडरडॉग हूं जो हमेशा उस टारगेट की तरफ निशाना लगाता है जो कोई और नहीं देखता।",
+    "connectWithMe": "मुझसे जुड़ें:"
+  },
+  "projects": {
+    "title": "ओपन सोर्स प्रोजेक्ट्स",
+    "subtitle": "कोड लिखना, प्रोजेक्ट्स शिप करना, और <highlight>कभी-कभी सोना</highlight>",
+    "categories": {
+      "webTools": "वेब टूल्स",
+      "reactComponents": "रिएक्ट कंपोनेंट्स",
+      "reactNativeComponents": "रिएक्ट नेटिव कंपोनेंट्स",
+      "nodejsProjects": "Node.js प्रोजेक्ट्स",
+      "jsLibraries": "JavaScript लाइब्रेरीज",
+      "cliTools": "CLI टूल्स",
+      "fullStackProjects": "फुल स्टैक प्रोजेक्ट्स",
+      "aimlProjects": "AI/ML प्रोजेक्ट्स",
+      "mobileApps": "मोबाइल ऐप्स",
+      "browserExtensions": "ब्राउज़र एक्सटेंशन्स",
+      "fullStackApps": "फुल स्टैक ऐप्स",
+      "vscodeExtensions": "VSCode एक्सटेंशन्स",
+      "aiProjects": "AI प्रोजेक्ट्स",
+      "developerTools": "डेवलपर टूल्स",
+      "librariesPackages": "लाइब्रेरीज और पैकेजेस"
+    },
+    "demo": "डेमो"
+  },
+  "apps": {
+    "workInProgress": "विकास जारी",
+    "wipSubtitle": "हम कुछ शानदार बनाने के लिए गहराई में खोद रहे हैं!",
+    "wipHighlight": "तब तक, नीचे खजाना खोजने में हमारी मदद करें!",
+    "digs": "खुदाई",
+    "score": "स्कोर",
+    "rareFinds": "दुर्लभ खोज",
+    "clickToDig": "खोदने के लिए क्लिक करें!",
+    "recentDiscoveries": "हाल की खोजें",
+    "comingSoon": "जल्द आ रहा है..."
+  },
+  "blog": {
+    "title": "ब्लॉग",
+    "subtitle": "वेब डेवलपमेंट पर विचार, ट्यूटोरियल और इनसाइट्स।",
+    "technicalArticles": "तकनीकी लेख",
+    "articlesSubtitle": "विचार, गहन अध्ययन, और रास्ते में सीखे गए सबक",
+    "readOnMedium": "Medium पर पढ़ें →",
+    "viewAllArticles": "Medium पर सभी लेख देखें →"
+  },
+  "common": {
+    "loading": "लोड हो रहा है..."
+  }
+}

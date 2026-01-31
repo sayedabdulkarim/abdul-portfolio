@@ -1,0 +1,74 @@
+{
+  "nav": {
+    "projects": "Projects",
+    "apps": "Apps",
+    "blog": "Blog",
+    "about": "About"
+  },
+  "home": {
+    "name": "Sayed Abdul Karim",
+    "intro": "Hi, I am a <highlight>software developer</highlight> who loves building things and poking around in every tech stack.",
+    "playBreakout": "Play Breakout",
+    "youWin": "You Win!",
+    "gameOver": "Game Over!",
+    "score": "Score",
+    "playAgain": "Play Again",
+    "closeGame": "Close Game"
+  },
+  "about": {
+    "greeting": "Hi there",
+    "name": "I'm Sayed Abdul Karim",
+    "intro1": "Engineer by day, explorer by night! A code wrangler with a knack for diving into the deep end of technology.",
+    "intro2": "Not tied down to any one domain—I'm on a mission to conquer them all",
+    "intro3": "Currently navigating the uncharted waters of <strong>AI/ML</strong>, and loving every bit of the adventure!",
+    "learning": "I'm currently learning",
+    "learningSkills": "AI, ML, DL, NLP, Computer Vision",
+    "reachMe": "How to reach me",
+    "funFact": "Fun fact: I'm the quiet underdog who's always aiming for the target no one else sees.",
+    "connectWithMe": "Connect with me:"
+  },
+  "projects": {
+    "title": "Open Source Projects",
+    "subtitle": "Writing code, shipping projects, and <highlight>occasionally sleeping</highlight>",
+    "categories": {
+      "webTools": "Web Tools",
+      "reactComponents": "React Components",
+      "reactNativeComponents": "React Native Components",
+      "nodejsProjects": "Node.js Projects",
+      "jsLibraries": "JavaScript Libraries",
+      "cliTools": "CLI Tools",
+      "fullStackProjects": "Full Stack Projects",
+      "aimlProjects": "AI/ML Projects",
+      "mobileApps": "Mobile Apps",
+      "browserExtensions": "Browser Extensions",
+      "fullStackApps": "Full Stack Apps",
+      "vscodeExtensions": "VSCode Extensions",
+      "aiProjects": "AI Projects",
+      "developerTools": "Developer Tools",
+      "librariesPackages": "Libraries & Packages"
+    },
+    "demo": "Demo"
+  },
+  "apps": {
+    "workInProgress": "Work In Progress",
+    "wipSubtitle": "We're digging deep to build something awesome!",
+    "wipHighlight": "Meanwhile, help us dig for treasures below!",
+    "digs": "Digs",
+    "score": "Score",
+    "rareFinds": "Rare Finds",
+    "clickToDig": "Click to dig!",
+    "recentDiscoveries": "Recent Discoveries",
+    "comingSoon": "Coming Soon..."
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Thoughts, tutorials, and insights on web development.",
+    "technicalArticles": "Technical Articles",
+    "articlesSubtitle": "Thoughts, deep dives, and lessons learned along the way",
+    "readOnMedium": "Read on Medium →",
+    "viewAllArticles": "View all articles on Medium →"
+  },
+  "common": {
+    "loading": "Loading..."
+  }
+}

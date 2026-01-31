@@ -1,0 +1,74 @@
+{
+  "nav": {
+    "projects": "Projekte",
+    "apps": "Anwendungen",
+    "blog": "Blog",
+    "about": "Über mich"
+  },
+  "home": {
+    "name": "Sayed Abdul Karim",
+    "intro": "Hallo, ich bin ein <highlight>Softwareentwickler</highlight>, der es liebt, Dinge zu bauen und jeden Tech-Stack zu erkunden.",
+    "playBreakout": "Breakout spielen",
+    "youWin": "Du hast gewonnen!",
+    "gameOver": "Spiel vorbei!",
+    "score": "Punktzahl",
+    "playAgain": "Nochmal spielen",
+    "closeGame": "Spiel schließen"
+  },
+  "about": {
+    "greeting": "Hallo",
+    "name": "Ich bin Sayed Abdul Karim",
+    "intro1": "Tagsüber Ingenieur, nachts Entdecker! Ein Code-Wrangler mit einem Talent dafür, in die Tiefen der Technologie einzutauchen.",
+    "intro2": "Nicht an eine Domäne gebunden—meine Mission ist es, alle zu erobern",
+    "intro3": "Navigiere derzeit durch die unbekannten Gewässer von <strong>KI/ML</strong> und liebe jeden Moment dieses Abenteuers!",
+    "learning": "Ich lerne gerade",
+    "learningSkills": "KI, ML, DL, NLP, Computer Vision",
+    "reachMe": "So erreichen Sie mich",
+    "funFact": "Fun Fact: Ich bin der stille Außenseiter, der immer auf das Ziel zielt, das niemand sonst sieht.",
+    "connectWithMe": "Verbinde dich mit mir:"
+  },
+  "projects": {
+    "title": "Open Source Projekte",
+    "subtitle": "Code schreiben, Projekte ausliefern, und <highlight>gelegentlich schlafen</highlight>",
+    "categories": {
+      "webTools": "Web-Tools",
+      "reactComponents": "React-Komponenten",
+      "reactNativeComponents": "React Native-Komponenten",
+      "nodejsProjects": "Node.js-Projekte",
+      "jsLibraries": "JavaScript-Bibliotheken",
+      "cliTools": "CLI-Tools",
+      "fullStackProjects": "Full Stack-Projekte",
+      "aimlProjects": "KI/ML-Projekte",
+      "mobileApps": "Mobile Apps",
+      "browserExtensions": "Browser-Erweiterungen",
+      "fullStackApps": "Full Stack-Anwendungen",
+      "vscodeExtensions": "VSCode-Erweiterungen",
+      "aiProjects": "KI-Projekte",
+      "developerTools": "Entwickler-Tools",
+      "librariesPackages": "Bibliotheken und Pakete"
+    },
+    "demo": "Demo"
+  },
+  "apps": {
+    "workInProgress": "In Arbeit",
+    "wipSubtitle": "Wir graben tief, um etwas Großartiges zu bauen!",
+    "wipHighlight": "In der Zwischenzeit, hilf uns unten nach Schätzen zu graben!",
+    "digs": "Grabungen",
+    "score": "Punktzahl",
+    "rareFinds": "Seltene Funde",
+    "clickToDig": "Klicken zum Graben!",
+    "recentDiscoveries": "Neueste Entdeckungen",
+    "comingSoon": "Demnächst verfügbar..."
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Gedanken, Tutorials und Einblicke in die Webentwicklung.",
+    "technicalArticles": "Technische Artikel",
+    "articlesSubtitle": "Gedanken, tiefe Analysen und Lektionen auf dem Weg",
+    "readOnMedium": "Auf Medium lesen →",
+    "viewAllArticles": "Alle Artikel auf Medium anzeigen →"
+  },
+  "common": {
+    "loading": "Wird geladen..."
+  }
+}

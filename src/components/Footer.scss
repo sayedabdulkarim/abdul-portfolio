@@ -1,0 +1,73 @@
+.footer {
+  background-color: var(--container-color);
+  border-top: 1px solid var(--text-color-light);
+  padding: 20px 0;
+
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      gap: 16px;
+    }
+  }
+
+  .footer-text {
+    font-family: 'Fira Code', 'Consolas', monospace;
+    font-size: 0.875rem;
+    color: var(--text-color);
+    margin: 0;
+
+    .funky-text {
+      color: #c678dd;
+    }
+
+    .brackets {
+      color: #e5c07b;
+    }
+
+    .string {
+      color: #98c379;
+    }
+
+    .semicolon {
+      color: var(--text-color);
+    }
+
+    .cursor {
+      color: var(--first-color);
+      animation: blink 1s infinite;
+    }
+  }
+
+  .footer-links {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    .footer-link {
+      color: var(--text-color);
+      font-size: 1rem;
+      transition: all 0.2s ease;
+
+      &:hover {
+        color: var(--title-color);
+        transform: translateY(-2px);
+      }
+    }
+  }
+}
+
+@keyframes blink {
+  0%, 50% {
+    opacity: 1;
+  }
+  51%, 100% {
+    opacity: 0;
+  }
+}

@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 // import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles/modules/index.scss";
+import "./i18n";
 // import { router } from "./config/routeConfig";
 import AppRoutes from "./config/routeConfig";
 import store from "./store";

@@ -1,144 +1,257 @@
-# Sayed Abdul Karim - Complete Information
+# Sayed Abdul Karim - Complete Information (For Chatbot Training)
+
+> **IMPORTANT**: This file is used for chatbot training. NO company-specific details included.
+
+---
 
 ## Personal Details
-- **Full Name:** Sayed Abdul Karim  
+- **Full Name:** Sayed Abdul Karim
 - **Known As:** Abdul
 - **Email:** sakarim9124@gmail.com
-- **Phone:** 08296708008
 - **Location:** Bengaluru, Karnataka, India
 - **GitHub:** https://github.com/sayedabdulkarim
-- **Portfolio:** https://sayedabdulkarim.github.io/abdul-portfolio/
+- **Portfolio:** https://abdul-portfolio.net
+- **LinkedIn:** https://www.linkedin.com/in/sayed4747
 
-## Current Role
-- **Position:** Senior Experience Engineer
-- **Company:** Publicis Sapient
-- **Duration:** December 2023 - Present
-- **Location:** Bengaluru
+---
 
-## Professional Experience (4.6+ Years)
+## Professional Summary
+- **Title:** Senior Software Engineer
+- **Experience:** 5+ years
+- **Specialization:** Full-stack Development, AI/ML Integration
+- **Current Focus:** AI, LLMs, RAG, Fine-tuning, Prompt Engineering
 
-### Publicis Sapient (Dec 2023 - Present)
-- **Role:** Senior Experience Engineer
-- **Projects:**
-  - **Patient Portal:** For Optum patients using React Native, TypeScript, Firebase. Available on Android, iOS, and web platforms
-  - **Company Timesheet App:** Desktop portal consolidating timesheet submissions across three platforms using React, Electron, Node.js, Express
-- **Technologies:** React Native, TypeScript, Firebase, React Testing Library, Jest, Electron, Node.js, Express
-
-### Tavant Technologies (Nov 2021 - Oct 2023) ~2 Years
-- **Role:** Software Engineer
-- **Location:** Bengaluru
-- **Projects:**
-  - **Scalable Legal:** React, Redux Toolkit, Google Map API, Twilio Chat, Web Accessibility
-  - **winfieldUnited:** jQuery, JavaScript, Foundation Framework, Bootstrap, Kentico CMS
-- **Technologies:** React, TypeScript, Redux Toolkit, Google Maps API, Twilio, Kentico CMS
-
-### Capital Numbers (Apr 2021 - Nov 2021) ~7 Months
-- **Role:** Software Engineer
-- **Location:** Kolkata, West Bengal
-- **Projects:**
-  - **DewSquad UserEnd:** NextJS, Redux Toolkit
-  - **DewSquad Admin:** NextJS, Redux Toolkit
-- **Technologies:** NextJS, Redux Toolkit
-
-### Vibrant Info (Mar 2020 - Apr 2021) ~13 Months
-- **Role:** React JS Developer
-- **Location:** Bangalore
-- **Projects:**
-  - **Nodwin Vendor Portal:** ReactSSR, Redux, Node.js, MongoDB, S3 bucket, Firebase
-  - **Alwar Soft:** React, Redux Saga, TypeScript, Zendesk integration
-- **Technologies:** React, Redux, Redux Saga, Node.js, MongoDB, Firebase, TypeScript
+---
 
 ## Technical Skills
 
 ### Frontend
 - React.js, React Native, Next.js
 - TypeScript, JavaScript, HTML5, CSS3
-- Redux, Redux Toolkit, Redux Saga, Context API
-- Material UI, Bootstrap, Emotion CSS-in-JS, SCSS
+- Redux, Redux Toolkit, Redux Saga, Context API, Zustand
+- Material UI, Tailwind CSS, Bootstrap, SCSS
 - Storybook, Web Accessibility
 
 ### Backend
-- Node.js, Express.js
-- FastAPI (Python)
+- Node.js, Express.js, FastAPI
+- REST APIs, GraphQL
 - JWT Authentication, PassportJS
-- REST APIs
 
 ### Databases
-- MongoDB
-- PostgreSQL
-- Firebase
-- Redis
+- MongoDB, PostgreSQL, MySQL
+- Firebase, Redis
 
 ### AI/ML Technologies
 - LLM (Large Language Models)
 - RAG (Retrieval Augmented Generation)
-- AI Agents
-- Prompt Engineering
+- AI Agents, MCP (Model Context Protocol)
+- Prompt Engineering, Fine-tuning
+- Sentiment Analysis
 
-### Tools & Technologies
-- Git, Docker, CI/CD
-- AWS (EC2, S3, Lambda)
-- Vercel, Netlify
-- Socket.io, WebRTC
-- GraphQL
-- Electron
+### Desktop & Mobile
+- Electron.js (Desktop Apps)
+- React Native (Mobile Apps)
+
+### Real-time & Communication
+- Socket.IO, WebRTC
+- Twilio Integration
+
+### DevOps & Tools
+- Docker, Kubernetes, AWS
+- Git, CI/CD
 - Jest, React Testing Library
-- Kentico CMS
-- Zendesk, Twilio
-- Google Maps API
 
-### State Management
-- Redux, Redux Toolkit
-- Redux Saga, Redux Thunk
-- Zustand
-- Context API
+---
 
-## Personal Projects
+## Open Source Projects
 
-### 1. Food Delivery App
-- **Live Demo:** https://foodie-delight.netlify.app/
-- **Description:** Complete food delivery system with client portal, admin portal, and server API
-- **Technologies:** React, Redux Toolkit, TypeScript, SCSS, Google Maps, Node.js, MongoDB, JWT
+### Full Stack Apps
+
+#### Food Delivery App - Client Portal
+- **Description:** Real-time food ordering with tracking and personalized customer insights
+- **Tech Stack:** React, Redux Toolkit, TypeScript, SCSS, Google Maps, JWT, CSRF
+- **GitHub:** https://github.com/sayedabdulkarim/enhanced_swiggy_with_LLM/tree/master
+- **Live:** https://feedo-app.vercel.app/
+
+#### Food Delivery App - Admin Portal
+- **Description:** Order and data management system with business analytics
+- **Tech Stack:** React, Redux Toolkit, TypeScript, SCSS
+- **GitHub:** https://github.com/sayedabdulkarim/enhanced_swiggy_with_LLM/tree/master
+- **Live:** https://feedo-admin.vercel.app/
+
+---
+
+### AI Projects
+
+#### Synth AI
+- **Description:** AI platform that generates applications through natural language prompts. Uses Anthropic Claude & MCP for code generation with real-time terminal emulation.
+- **Tech Stack:** React, TypeScript, Material UI, Monaco Editor, Socket.IO, Node.js, Express, Anthropic API, MCP
+- **GitHub:** https://github.com/sayedabdulkarim/no_code_01
+- **Live:** https://nocode01-production-f989.up.railway.app/
 - **Features:**
-  - JWT and CSRF token security
-  - Google Maps integration
-  - LLM-based sentiment analysis
-  - Admin panel for order management
-  - Firebase OTP authentication
-
-### 2. Synth AI
-- **Live Demo:** https://synth-ai.netlify.app/
-- **Description:** No-code AI application generator using AI to create applications without writing code
-- **Technologies:** React, TypeScript, Socket.io, Node.js, Express, monaco-editor, Anthropic's API with MCP
-- **Features:**
+  - AI-powered code generation
   - Real-time terminal emulation
   - Live preview
-  - AI-powered code generation
-  - Anthropic's MCP (Model Context Protocol) integration
+  - Multi-project support
+
+#### Kanbanix
+- **Description:** AI-driven Kanban system with task suggestions and GitHub integration. Can generate code, commit, and raise PRs automatically.
+- **Tech Stack:** React, AI, GitHub API
+- **Features:**
+  - AI task suggestions
+  - Code generation
+  - Automatic commits and PR creation
+
+---
+
+### VSCode Extensions
+
+#### QuickTick
+- **Description:** Project-specific todo lists with persistent storage and progress tracking
+- **Tech Stack:** TypeScript, VSCode API
+- **GitHub:** https://github.com/sayedabdulkarim/QuickTick
+- **Marketplace:** https://marketplace.visualstudio.com/items?itemName=sayedabdulkarim.quicktick
+
+#### Origami
+- **Description:** Smart code folding extension with keyboard shortcuts and status bar integration
+- **Tech Stack:** TypeScript, VSCode API
+- **GitHub:** https://github.com/sayedabdulkarim/origami-extension
+- **Marketplace:** https://marketplace.visualstudio.com/items?itemName=sayedabdulkarim.origami-vscode
+
+---
+
+### Browser Extensions (Chrome)
+
+#### JSON Formatter Pro
+- **Description:** Format, validate, diff JSON with tree view, query & 60+ themes
+- **Tech Stack:** JavaScript, Chrome Extension API
+- **GitHub:** https://github.com/sayedabdulkarim/json-formatter-extension
+- **Chrome Store:** https://chromewebstore.google.com/detail/json-formatter-pro/manclbgdpakhaloiichknfhkinnfmmdd
+
+#### Pixel Ruler
+- **Description:** Measure any element on a webpage with guides & multiple units
+- **Tech Stack:** JavaScript, Chrome Extension API
+- **GitHub:** https://github.com/sayedabdulkarim/Pixel-Ruler
+- **Chrome Store:** https://chromewebstore.google.com/detail/pixel-ruler/oienlnjfakonfjbnbmigjddhndlngjel
+
+#### CaptureIt
+- **Description:** Full page screenshots, video recording & cropping - all in one
+- **Tech Stack:** JavaScript, Chrome Extension API, Canvas API
+- **GitHub:** https://github.com/sayedabdulkarim/CaptureIt
+- **Chrome Store:** https://chromewebstore.google.com/detail/captureit/cikijgjoamjjfjhkjmcbfnokmcbgeapk
+
+#### StashIt
+- **Description:** Vault extension to securely store and manage sensitive data
+- **Tech Stack:** JavaScript, Chrome Extension API, Encryption
+- **GitHub:** https://github.com/sayedabdulkarim/StashIt
+
+---
+
+### Developer Tools
+
+#### DevLens
+- **Description:** CLI tool to stream device logs without heavy IDEs like Android Studio or Xcode
+- **Tech Stack:** Node.js, CLI, ADB, iOS Logs
+- **GitHub:** https://github.com/sayedabdulkarim/devlens
+- **NPM:** https://www.npmjs.com/package/devlens
+
+#### Job Digger
+- **Description:** Job search aggregator to find opportunities across multiple platforms
+- **Tech Stack:** Node.js, Express, Web Scraping
+- **GitHub:** https://github.com/sayedabdulkarim/job-diggerrr
+- **Live:** https://job-diggerrr-production.up.railway.app/
+
+#### CodeLab
+- **Description:** Online code editor for quick prototyping
+- **Tech Stack:** React, Monaco Editor, Node.js
+- **GitHub:** https://github.com/sayedabdulkarim/code_Lab
+- **Live:** https://codelab-production.up.railway.app/
+
+#### CodeLab-JS
+- **Description:** Browser-based JavaScript compiler and executor
+- **Tech Stack:** JavaScript, HTML, CSS
+- **GitHub:** https://github.com/sayedabdulkarim/codelab-js
+- **Live:** https://sayedabdulkarim.github.io/codelab-js/
+
+#### OnlyDevs
+- **Description:** JSONPlaceholder clone - fake REST API for testing and prototyping
+- **Tech Stack:** Node.js, Express, REST API
+- **GitHub:** https://github.com/sayedabdulkarim/OnlyDevs
+- **Live:** https://onlydevs-production.up.railway.app/
+
+---
+
+### Libraries & NPM Packages
+
+#### zenkit-css
+- **Description:** Utility-first CSS framework for rapid UI development
+- **Tech Stack:** CSS, SCSS
+- **GitHub:** https://github.com/sayedabdulkarim/-zenkit-css
+- **NPM:** https://www.npmjs.com/package/zenkit-css
+
+#### ui_zenkit
+- **Description:** React component library with reusable UI components
+- **Tech Stack:** React, TypeScript, Storybook
+- **GitHub:** https://github.com/sayedabdulkarim/-zenkit-ui
+- **NPM:** https://www.npmjs.com/package/ui_zenkit
+
+#### pluck-dom
+- **Description:** Lightweight DOM manipulation library
+- **Tech Stack:** JavaScript, DOM API
+- **GitHub:** https://github.com/sayedabdulkarim/pluck
+- **NPM:** https://www.npmjs.com/package/pluck-dom
+
+---
 
 ## Education
 - **Degree:** BTech
 - **College:** PKACE, Bargarh, Odisha
 - **Graduation:** June 2017
 
-## Career Timeline
-- **2020:** Started career at Vibrant Info
-- **2021:** Moved to Capital Numbers, then Tavant Technologies
-- **2023:** Joined Publicis Sapient as Senior Experience Engineer
-- **Total Experience:** 4.6+ years (Started March 2020)
+---
 
-## Key Achievements
-- Senior Experience Engineer at Fortune 500 company (Publicis Sapient)
-- Built complete e-commerce and AI-powered applications
-- Experience with healthcare (Patient Portal) and enterprise applications
-- Proficient in modern web technologies and AI/ML integration
-- Led technical initiatives and mentored junior developers
+## Tech Stack → Project Mapping
 
-## Specializations
-- Full-stack Development (React + Node.js)
-- Mobile Development (React Native)
-- AI/ML Integration (LLM, RAG, Prompt Engineering)
-- Real-time Applications (Socket.io, WebRTC)
-- Enterprise Applications
-- Healthcare Technology
-- No-code/Low-code Solutions
+| Technology | Projects |
+|------------|----------|
+| React | Food Delivery App, Synth AI, CodeLab, ui_zenkit |
+| TypeScript | Food Delivery App, Synth AI, QuickTick, Origami |
+| Node.js | DevLens, Job Digger, CodeLab, OnlyDevs, Food Delivery Server |
+| Express | Job Digger, CodeLab, OnlyDevs |
+| MongoDB | Food Delivery Server, Job Digger |
+| Redux | Food Delivery App (Client & Admin) |
+| Socket.IO | Synth AI |
+| AI/LLM | Synth AI, Kanbanix, Food Delivery Server |
+| Chrome Extension | JSON Formatter Pro, StashIt, Pixel Ruler, CaptureIt |
+| VSCode Extension | QuickTick, Origami |
+| CLI | DevLens |
+| CSS Framework | zenkit-css |
+| Component Library | ui_zenkit |
+
+---
+
+## Personality & About
+
+- Engineer by day, explorer by night
+- Code wrangler with a knack for diving into the deep end of technology
+- Not tied down to any one domain—on a mission to conquer them all
+- Currently navigating the uncharted waters of AI/ML
+- The quiet underdog who's always aiming for the target no one else sees
+
+---
+
+## Privacy Note
+
+**When asked about companies or employers:**
+> "I prefer to keep my employment details private. However, I'd be happy to discuss my skills, personal projects, or the technologies I work with!"
+
+**What NOT to disclose:**
+- Company names
+- Client names
+- Employment dates
+- Internal project details
+- Salary information
+
+---
+
+*Last Updated: January 2026*

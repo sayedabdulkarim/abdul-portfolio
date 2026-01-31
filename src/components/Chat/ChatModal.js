@@ -46,7 +46,7 @@ const ChatModal = ({ messages, onSendMessage, onClose, isTyping }) => {
   const suggestions = [
     "Who are you?",
     "What's your favorite project?",
-    "Tell me about PennyWise",
+    "Tell me about your experience",
     "What tech stack do you use?",
   ];
 
