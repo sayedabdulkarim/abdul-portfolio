@@ -144,6 +144,26 @@ const Projects2 = () => {
         live: "https://www.npmjs.com/package/pluck-dom",
       },
     ],
+    "webTools": [
+      {
+        name: "JSON-CSV Pro",
+        desc: "Convert data between JSON and CSV formats in both directions, offline",
+        github: "https://github.com/sayedabdulkarim/json-csv-pro",
+        live: "https://sayedabdulkarim.github.io/json-csv-pro/",
+      },
+      {
+        name: "Base64 Studio",
+        desc: "Encode and decode text & images to base64 format in browser",
+        github: "https://github.com/sayedabdulkarim/base64Studio",
+        live: "https://sayedabdulkarim.github.io/base64Studio/",
+      },
+      {
+        name: "RegexLab",
+        desc: "Test and validate regex patterns with live highlighting",
+        github: "https://github.com/sayedabdulkarim/regexLab",
+        live: "https://sayedabdulkarim.github.io/regexLab/",
+      },
+    ],
   };
 
   const categoryKeys = [
@@ -153,6 +173,7 @@ const Projects2 = () => {
     "aiProjects",
     "developerTools",
     "librariesPackages",
+    "webTools",
   ];
 
   const handleVideoClick = (video) => {
