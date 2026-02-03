@@ -164,6 +164,26 @@ const Projects2 = () => {
         live: "https://sayedabdulkarim.github.io/regexLab/",
       },
     ],
+    "reactComponents": [
+      {
+        name: "Toastique",
+        desc: "Customizable toast notification system for React with multiple styles",
+        github: "https://github.com/sayedabdulkarim/toastique",
+        live: "https://www.npmjs.com/package/react-toastique",
+      },
+      {
+        name: "React Scroll Infinity",
+        desc: "Infinite scroll hook for React with automatic content loading",
+        github: "https://github.com/sayedabdulkarim/react-scroll-infinity",
+        live: "https://www.npmjs.com/package/react-scroll-infinity",
+      },
+      {
+        name: "Selectra",
+        desc: "Searchable multi-select dropdown component with tagging support",
+        github: "https://github.com/sayedabdulkarim/Selectra",
+        live: "https://www.npmjs.com/package/selectra-react",
+      },
+    ],
   };
 
   const categoryKeys = [
@@ -174,6 +194,7 @@ const Projects2 = () => {
     "developerTools",
     "librariesPackages",
     "webTools",
+    "reactComponents",
   ];
 
   const handleVideoClick = (video) => {
