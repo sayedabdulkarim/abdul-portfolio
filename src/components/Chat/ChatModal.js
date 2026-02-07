@@ -78,16 +78,25 @@ const ChatModal = ({ messages, onSendMessage, onClose, isTyping }) => {
       {/* Initial Message with Warning */}
       <div className="chat-modal-intro">
         <p className="intro-message">
-          Hi! I'm Sayed Abdul Karim. Ask me about my projects, experience, or
-          tech stack!
+          Hey! I'm Abdul's AI twin. Curious about my projects, skills, or
+          journey? Let's chat!
         </p>
         <div className="warning-message">
           <span className="warning-icon">⚠️</span>
           <span>
-            Fine-tuned on Llama 3.2 1B with a small dataset. Not always
-            accurate, just for fun!
+            Fine-tuned on Llama 3.2 1B with minimal data. Treat responses as
+            experimental.
           </span>
         </div>
+        {showSuggestions && messages.length <= 1 && (
+          <div className="cold-start-note">
+            <span className="clock-icon">⏳</span>
+            <span>
+              First response may take ~30s (free tier cold start). Please be
+              patient!
+            </span>
+          </div>
+        )}
       </div>
 
       {/* Suggestions */}
@@ -122,7 +131,18 @@ const ChatModal = ({ messages, onSendMessage, onClose, isTyping }) => {
       </div>
 
       {/* Input Area */}
-      <div className="chat-modal-footer">
+      <div
+        className="chat-modal-footer"
+        style={{
+          position: "absolute",
+          // marginTop: "140px",
+          bottom: "-75px",
+          background: "#0d0d0d",
+          padding: "16px",
+          borderRadius: "0 0 20px 20px",
+          zIndex: 10,
+        }}
+      >
         <ChatInput
           value={inputValue}
           onChange={setInputValue}

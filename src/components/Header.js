@@ -128,7 +128,9 @@ const Header = () => {
 
           <div className="nav__icons">
             <a
-              href="mailto:sakarim9124@gmail.com"
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=sakarim9124@gmail.com"
+              target="_blank"
+              rel="noreferrer"
               className="nav__icon-link"
               title="Email"
             >

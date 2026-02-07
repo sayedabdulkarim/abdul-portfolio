@@ -163,6 +163,12 @@ const Projects2 = () => {
         github: "https://github.com/sayedabdulkarim/regexLab",
         live: "https://sayedabdulkarim.github.io/regexLab/",
       },
+      {
+        name: "GhostMail",
+        desc: "Disposable email service with auto-expiring temporary addresses for privacy",
+        github: "https://github.com/sayedabdulkarim/GhostMail",
+        live: "https://myghostmail.shop/",
+      },
     ],
     "reactComponents": [
       {

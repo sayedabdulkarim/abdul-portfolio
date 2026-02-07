@@ -1,15 +1,16 @@
-// Chat Input Form
+// Chat Input Form - Orange & Black Splash Theme
 .chat-input-form {
   display: flex;
   gap: 8px;
-  background: #2a3142;
-  border-radius: 12px;
+  background: #1a1a1a;
+  border-radius: 14px;
   padding: 4px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  transition: border-color 0.2s;
+  border: 1px solid rgba(255, 107, 0, 0.2);
+  transition: all 0.3s ease;
 
   &:focus-within {
-    border-color: #667eea;
+    border-color: #ff6b00;
+    box-shadow: 0 0 20px rgba(255, 107, 0, 0.15);
   }
 
   .chat-input {
@@ -23,7 +24,7 @@
     font-family: inherit;
 
     &::placeholder {
-      color: #8892b0;
+      color: #555;
     }
 
     &:disabled {
@@ -33,31 +34,52 @@
   }
 
   .send-button {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #ff6b00 0%, #ff9500 100%);
     border: none;
-    border-radius: 8px;
+    border-radius: 10px;
     color: white;
-    width: 40px;
-    height: 40px;
+    width: 44px;
+    height: 44px;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    transition: all 0.2s;
+    transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    position: relative;
+    overflow: hidden;
+
+    // Shine on hover
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+      transition: left 0.4s;
+    }
 
     svg {
       width: 18px;
       height: 18px;
+      position: relative;
+      z-index: 1;
     }
 
     &:hover:not(:disabled) {
-      transform: scale(1.05);
-      box-shadow: 0 2px 8px rgba(102, 126, 234, 0.4);
+      transform: scale(1.08);
+      box-shadow: 0 4px 15px rgba(255, 107, 0, 0.4);
+
+      &::before {
+        left: 100%;
+      }
     }
 
     &:disabled {
-      opacity: 0.5;
+      opacity: 0.4;
       cursor: not-allowed;
+      background: #333;
     }
   }
 }
