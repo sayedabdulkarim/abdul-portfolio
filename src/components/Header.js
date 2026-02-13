@@ -8,7 +8,7 @@ import { Link, useLocation } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faCode, faGlobe, faChevronDown, faSun, faMoon } from "@fortawesome/free-solid-svg-icons";
+import { faCode, faGlobe, faChevronDown, faSun, faMoon, faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 const Header = () => {
@@ -19,6 +19,7 @@ const Header = () => {
 
   const [theme, setTheme] = useState(null);
   const [showLangDropdown, setShowLangDropdown] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const handleChange = (value) => {
     setTheme(value);
@@ -111,6 +112,32 @@ const Header = () => {
             <img src="/assets/icon.gif" alt="Abdul" className="logo-gif" />
           </div>
         </Link>
+
+        <button
+          className="nav__mobile-toggle"
+          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          aria-label="Toggle menu"
+        >
+          <FontAwesomeIcon icon={mobileMenuOpen ? faXmark : faBars} />
+        </button>
+
+        {mobileMenuOpen && (
+          <div className="nav__mobile-menu">
+            <ul className="nav__mobile-links">
+              {navLinks.map((link) => (
+                <li key={link.path}>
+                  <Link
+                    to={link.path}
+                    className={`nav__mobile-link ${isActive(link) ? "active" : ""}`}
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
 
         <div className="nav__right">
           <ul className="nav__links">

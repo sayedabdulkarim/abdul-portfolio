@@ -190,6 +190,26 @@ const Projects2 = () => {
         live: "https://www.npmjs.com/package/selectra-react",
       },
     ],
+    "nodejsProjects": [
+      {
+        name: "Shrinkr",
+        desc: "URL shortener service for creating compact, shareable links",
+        github: "https://github.com/sayedabdulkarim/shrinkr",
+        live: "https://shrinkr-production-2500.up.railway.app/",
+      },
+      {
+        name: "Compressio",
+        desc: "File compression tool for optimizing and reducing file sizes",
+        github: "https://github.com/sayedabdulkarim/Compressio",
+        live: "https://compressio-production.up.railway.app/",
+      },
+      {
+        name: "Hookbin",
+        desc: "Webhook testing and inspection tool for capturing HTTP requests",
+        github: "https://github.com/sayedabdulkarim/hookbin",
+        live: "https://hookbin-production.up.railway.app/",
+      },
+    ],
   };
 
   const categoryKeys = [
@@ -201,6 +221,7 @@ const Projects2 = () => {
     "librariesPackages",
     "webTools",
     "reactComponents",
+    "nodejsProjects",
   ];
 
   const handleVideoClick = (video) => {

@@ -335,9 +335,31 @@
 
   // Responsive
   @media (max-width: 768px) {
-    width: calc(100vw - 32px);
-    height: calc(100vh - 120px);
-    right: 16px;
+    width: calc(100vw - 16px);
+    height: calc(100vh - 100px);
+    right: 8px;
     bottom: 80px;
+    border-radius: 16px;
+
+    .chat-modal-header {
+      padding: 14px 16px;
+    }
+
+    .chat-modal-intro {
+      margin: 8px;
+      padding: 12px 14px;
+
+      .intro-message {
+        font-size: 14px;
+      }
+    }
+
+    .suggestions-section {
+      padding: 0 12px 8px;
+    }
+
+    .chat-modal-footer {
+      border-radius: 0 0 16px 16px;
+    }
   }
 }

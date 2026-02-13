@@ -113,7 +113,7 @@ html {
 }
 
 body {
-  margin: 0 0 var(--header-height) 0;
+  margin: 0;
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
@@ -174,9 +174,16 @@ img {
 
 /*==================== LAYOUT ====================*/
 
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+}
+
 .main-content {
   padding-top: 66px; // Account for fixed header height
-  min-height: 100vh;
+  flex: 1;
 }
 
 .container {

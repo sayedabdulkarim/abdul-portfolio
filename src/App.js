@@ -18,7 +18,7 @@ const App = () => {
   };
 
   return (
-    <>
+    <div className="app-wrapper">
       {isLoading && <InitialLoader onLoadingComplete={handleLoadingComplete} />}
       {isLanguageChanging && <RouteLoader />}
       <ToastContainer />
@@ -28,7 +28,7 @@ const App = () => {
       </main>
       <Footer />
       <ChatBot />
-    </>
+    </div>
   );
 };
 

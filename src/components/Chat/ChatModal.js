@@ -131,18 +131,7 @@ const ChatModal = ({ messages, onSendMessage, onClose, isTyping }) => {
       </div>
 
       {/* Input Area */}
-      <div
-        className="chat-modal-footer"
-        style={{
-          position: "absolute",
-          // marginTop: "140px",
-          bottom: "-75px",
-          background: "#0d0d0d",
-          padding: "16px",
-          borderRadius: "0 0 20px 20px",
-          zIndex: 10,
-        }}
-      >
+      <div className="chat-modal-footer">
         <ChatInput
           value={inputValue}
           onChange={setInputValue}
